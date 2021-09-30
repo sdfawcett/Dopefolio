@@ -185,8 +185,11 @@ textarea {
 
 .home-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
-  background-position: center;
+  /*background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background-position: center;*/
+  background-image: url(https://picsum.photos/id/0/1000);
+  background-repeat: none;
+  background-size: cover;
   height: 100vh;
   min-height: 80rem;
   max-height: 120rem;
@@ -497,8 +500,11 @@ textarea {
   position: fixed;
   width: 100%;
   z-index: 1000;
-  background: #000;
-  background: #fff;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background: rgba(50,50,50,0.5);
+  /*background: #000;
+  background: #fff;*/
   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1); }
   .header__content {
     display: flex;
@@ -548,7 +554,8 @@ textarea {
     padding: 2.2rem 3rem;
     display: inline-block;
     font-size: 1.6rem;
-    color: #333;
+    color:#fff;
+    /*color: #333;*/
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
@@ -659,18 +666,83 @@ textarea {
       .main-footer__lower {
         padding: 3.5rem 0; } }
 
-.skills {
-  display: flex;
-  flex-wrap: wrap; }
-  .skills__skill {
-    padding: 1rem 2rem;
-    margin-bottom: 1.5rem;
-    margin-right: 1.5rem;
-    font-size: 1.6rem;
-    background: rgba(153, 153, 153, 0.2);
-    border-radius: 5px;
-    font-weight: 600;
-    color: #777; }
+    .skills-flex {
+      display: flex;
+      margin-bottom:2em;
+    }
+
+    .skills-container {
+      position: relative;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      margin:1em;
+      text-align: center;
+    }
+    .skills-container h3 {
+      
+    }
+    .skills-container svg {
+      position: absolute;
+      left: 0.66em;
+      top: 1em;
+      z-index: 999;
+      font-size: 4em;
+      fill: #E34F26;
+      transition: color 3.3s ease;
+    }
+    .skills-container svg.html {
+      fill: #E34F26;
+      display: inline-block;
+    }
+    .skills-container svg.css {
+      fill: #1572B6;
+    }
+    .skills-container svg.js {
+      fill: #F7DF1E;
+    }
+    .skills-container .back {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      transition: 0.3s all ease;
+      background: #E34F26;
+      border-radius: 50%;
+    }
+    .skills-container .back.html {
+      background: #E34F26;
+    }
+    .skills-container .back.css {
+      background: #1572B6;
+    }
+    .skills-container .back.js {
+      background: #F7DF1E;
+    }
+    .skills-container .back.active {
+      transform: scale(0.8);
+    }
+    .skills-container .front {
+      height: 90px;
+      width: 90px;
+      position: absolute;
+      left: 5px;
+      top: 19.5px;
+      background: white;
+      border-radius: 50%;
+      transition: 0.3s all ease;
+    }
+    .skills-container .front.active {
+      transform: scale(0);
+    }
+    .skills-container:hover svg {
+      fill: #fff;
+    }
+    .skills-container:hover .back {
+      transform: scale(0.8);
+    }
+    .skills-container:hover .front {
+      transform: scale(0);
+    }
 
 .mouse {
   width: 25px;
