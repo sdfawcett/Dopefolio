@@ -46,7 +46,9 @@ window.onscroll = function() {
   // pageYOffset for compatibility with IE
   if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
     document.getElementsByTagName("header")[0].classList.add(className);
+    document.getElementById("logo").src="./assets/png/mwp-logo-100x110.png";
   } else {
     document.getElementsByTagName("header")[0].classList.remove(className);
+    document.getElementById("logo").src="./assets/png/mwp-logo-white-100x110.png";
   }
 };
