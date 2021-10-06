@@ -36,3 +36,17 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+// --- this changes the styling of header on scroll start
+
+var className = "inverted";
+var scrollTrigger = 60;
+
+window.onscroll = function() {
+  // pageYOffset for compatibility with IE
+  if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
+    document.getElementsByTagName("header")[0].classList.add(className);
+  } else {
+    document.getElementsByTagName("header")[0].classList.remove(className);
+  }
+};
