@@ -1420,6 +1420,25 @@ textarea {
   padding: 2.2rem 3rem;
   display: inline-block;
   font-size: 1.6rem;
+  color: #fff;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  transition: transform .3s;
+}
+
+.header__link-btn:hover {
+  color: #149c54;
+  border: 1px solid #149c54;
+  transform: translateY(-3px);
+}
+
+header.inverted .header__link-btn {
+  padding: 2.2rem 3rem;
+  display: inline-block;
+  font-size: 1.6rem;
   background-color: #149c54;
   color: #fff;
   text-transform: uppercase;
@@ -1429,7 +1448,7 @@ textarea {
   transition: transform .3s;
 }
 
-.header__link-btn:hover {
+header.inverted .header__link-btn:hover {
   color: #fff;
   transform: translateY(-3px);
 }
