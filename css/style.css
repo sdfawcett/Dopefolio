@@ -51,7 +51,7 @@ body {
   font-family: sans-serif;
   overflow-x: hidden;
   overflow-y: scroll;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -296,8 +296,9 @@ textarea {
 .heading-primary {
   font-size: 6rem;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-align: center;
+  font-weight: 800;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -330,11 +331,11 @@ textarea {
   display: block;
   font-size: 4rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-align: center;
   margin-bottom: 3.5rem;
   position: relative;
+  font-weight: 800;
 }
 
 .heading-sec__main--lt {
@@ -403,7 +404,7 @@ textarea {
   text-transform: uppercase;
   letter-spacing: 2px;
   display: inline-block;
-  font-weight: 700;
+  font-weight: 800;
   border-radius: 5px;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   transition: transform .3s;
@@ -420,6 +421,11 @@ textarea {
 
 .btn--med {
   padding: 1.5rem 5rem;
+  font-size: 1.6rem;
+}
+
+.btn--sm {
+  padding: 1rem 3rem;
   font-size: 1.6rem;
 }
 
@@ -452,6 +458,7 @@ textarea {
   text-align: center;
   width: 100%;
   line-height: 1.6;
+  font-weight: 300;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -598,6 +605,7 @@ textarea {
   max-width: 60rem;
   line-height: 1.7;
   margin-bottom: 1rem;
+  font-weight: 300;
 }
 
 .about__content-details-para--hl {
@@ -718,6 +726,7 @@ textarea {
   -webkit-transform: translateY(0);
   transform: translateY(0);
   opacity: 1;
+  z-index: 9999;
 }
 #email-popup:checked + .email {
   background: #0c8;
@@ -1345,8 +1354,8 @@ textarea {
 }
 
 .header__logo-img-cont {
-  width: 9rem;
-  height: 11rem;
+  width: 6rem;
+  height: 6rem;
   border-radius: 10px;
   overflow: hidden;
   margin-right: 1.5rem;
@@ -1371,12 +1380,17 @@ textarea {
 .header__logo-sub {
   font-size: 2.5rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 1px;
 }
 
 .header__links {
   display: flex;
+  gap:2em;
+}
+
+.header__link-wrapper {
+  position: relative;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -1393,24 +1407,67 @@ textarea {
   /*color: #333;*/
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: 500;
   transition: color .3s;
 }
 
 .header__link:hover {
-  color: #0062b9;
+  color: #149c54;
+  font-weight: 800;
+}
+
+.header__link-btn {
+  padding: 2.2rem 3rem;
+  display: inline-block;
+  font-size: 1.6rem;
+  background-color: #149c54;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  transition: transform .3s;
+}
+
+.header__link-btn:hover {
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/*underline effect for nav menu items*/
+a.effect-underline:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+a.effect-underline:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
 }
 
 header.inverted .header__link {
   color: #333;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: 500;
   transition: color .3s;
 }
 
 header.inverted .header__link:hover {
-  color: #0062b9;
+  color: #149c54;
+  font-weight: 800;
 }
 
 @media only screen and (max-width: 56.25em) {
