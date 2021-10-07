@@ -10,9 +10,13 @@
 
   <link rel="stylesheet" href="css/style.css" />
 
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link rel="preload" as="fetch" crossorigin="anonymous" type="application/json"
+    href="./assets/json/52010-online-shopping.json">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,800;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,800;1,500&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -88,7 +92,7 @@
           <img id="logo" src="./assets/png/mwp-logo-only-white.png" alt="Mindful Web Partnership, LLC Logo Image"
             class="header__logo-img" />
         </div>
-        <span class="header__logo-sub">Mindful Web Partnership, LLC</span>
+        <h1><span class="header__logo-sub">Mindful</span> Web Partnership</h1>
       </div>
       <div class="header__main">
         <ul class="header__links">
@@ -138,6 +142,9 @@
   </header>
   <section class="home-hero">
     <div class="home-hero__content">
+
+
+
       <h1 class="heading-primary">Hey, My name is John Doe</h1>
       <div class="home-hero__info">
         <p class="text-primary">
@@ -149,6 +156,7 @@
       <div class="home-hero__cta">
         <a href="./#projects" class="btn btn--bg">Projects</a>
       </div>
+
     </div>
     <!--
     <div class="home-hero__socials">
@@ -183,6 +191,73 @@
       <div class="mouse"></div>
     </div>
   </section>
+
+  <section id="what-we-do" class="about sec-pad">
+    <div class="main-container">
+      <h2 class="heading heading-sec heading-sec__mb-med">
+        <span class="heading-sec__main">What We Do</span>
+        <span class="heading-sec__sub">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+          tempora explicabo quae quod deserunt eius sapiente
+        </span>
+      </h2>
+      <div class="about__content">
+        <div class="about__content-main">
+
+          <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_bay0b2ga.json" background="transparent"
+            speed="1" style="width: 500px; height: 500px;" loop autoplay></lottie-player>
+
+        </div>
+        <div class="about__content-skills">
+          <h3 class="about__content-title">We help clients build eCommerce <span
+              class="color-dd-gradient effect-shine">experiences</span> on Shopify.</h3>
+        </div>
+      </div>
+
+      <div class="example-equal-height">
+        <div class="example-equal-height-card">
+          <div class="example-equal-height-figure"><img
+              src="./assets/png/optimized/icon-design-dev.png"></div>
+          <div class="example-equal-height-caption">
+            <h5>Shopify Website Design and Development</h5>
+            <p>Churn rate non-disclosure agreement buyer focus ecosystem iPad.</p>
+          </div>
+        </div>
+        <div class="example-equal-height-card">
+          <div class="example-equal-height-figure"><img
+              src="./assets/png/optimized/icon-data.png"></div>
+          <div class="example-equal-height-caption">
+            <h5>eCommerce Store Migrations</h5>
+            <p>Twitter stock equity vesting period learning curve launch party pitch innovator series A financing churn
+              rate handshake.&nbsp;</p>
+          </div>
+        </div>
+        <div class="example-equal-height-card">
+          <div class="example-equal-height-figure"><img
+              src="./assets/png/optimized/icon-data.png">
+          </div>
+          <div class="example-equal-height-caption">
+            <h5>Marketing iPad angel investor.</h5>
+            <p>Funding influencer partner network metrics bandwidth leverage traction buzz virality.</p>
+          </div>
+        </div>
+      </div>
+
+      <!--
+      <div class="flex-grid-thirds">
+        <div class="col">
+        
+        </div>
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+      -->
+
+    </div>
+
+
+  </section>
+
   <section id="about" class="about sec-pad">
     <div class="main-container">
       <h2 class="heading heading-sec heading-sec__mb-med">
@@ -193,7 +268,7 @@
         </span>
       </h2>
       <div class="about__content">
-        <div class="about__content-main">
+        <div class="wwd__content-main">
           <h3 class="about__content-title">Get to know me!</h3>
           <div class="about__content-details">
             <p class="about__content-details-para">
@@ -216,7 +291,7 @@
           </div>
           <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a>
         </div>
-        <div class="about__content-skills">
+        <div class="wwd__content-main">
           <h3 class="about__content-title">Tools I Currently Use The Most:</h3>
 
           <!-- icons from https://simpleicons.org/ -->
@@ -275,6 +350,7 @@
       </div>
     </div>
   </section>
+
   <section id="projects" class="projects sec-pad">
     <div class="main-container">
       <h2 class="heading heading-sec heading-sec__mb-bg">
