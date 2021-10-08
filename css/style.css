@@ -294,6 +294,21 @@ textarea {
 }
 */
 
+.visible{
+  animation: scaleup 200ms ease-out;
+}
+.not-visible{
+  transform: scale(.5);
+}
+@keyframes scaleup{
+  0%{
+      transform: scale(.5);
+  }
+  100%{
+      transform: scale(1);
+  }
+}
+
 header h1 {
   font-size: 2.5rem;
   text-transform: uppercase;
@@ -308,9 +323,10 @@ header h1 {
 .heading-primary {
   font-size: 6rem;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-align: center;
   font-weight: 800;
+  line-height: 1;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -467,6 +483,7 @@ header h1 {
 .text-primary {
   color: #fff;
   font-size: 2.2rem;
+  margin-bottom: 2rem;
   text-align: center;
   width: 100%;
   line-height: 1.6;
@@ -579,7 +596,7 @@ header h1 {
 }
 
 .home-hero__cta {
-  margin-top: 5rem;
+  margin: 5rem 0;
   text-align: center;
 }
 
@@ -622,7 +639,7 @@ header h1 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1rem 5rem;
+  padding: 1rem;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
@@ -644,12 +661,15 @@ header h1 {
 }
 
 .example-equal-height h5 {
-  font-size: 2rem;
+  font-size: 1.9rem;
+  line-height: 2rem;
 }
 
 .example-equal-height p {
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 400;
+  line-height: 2rem;
+  margin-bottom: 1.2rem;
 }
 
 .example-equal-height-figure {
@@ -675,10 +695,24 @@ header h1 {
 }
 
 .example-equal-height-caption {
-  padding: 16px;
+  padding: 6% 6% 12% 6%;
   font-size: 0.875em;
   line-height: 1.5em;
 }
+
+.example-equal-height-caption a {
+  position: absolute;
+  top: 95%;
+  right: 7%;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #149c54;
+}
+
+
 h5 {
   margin-top: 0px;
   margin-bottom: 16px;
@@ -694,6 +728,52 @@ h5 {
   grid-template-columns: 1fr 1fr;
   grid-gap: 10rem;
   */
+}
+
+.about__content p {
+  display: block;
+  color: #333;
+  font-size: 2rem;
+  font-weight: 500;
+  max-width: 80rem;
+  line-height: 1.6;
+  margin-bottom:2rem;
+}
+
+.uvp-list ul {
+  display: inline-block;
+  padding: 1rem 2rem;
+}
+
+.uvp-list ul {
+  list-style: none;
+}
+
+.uvp-list ul > li {
+  clear: left;
+  padding: 1rem 5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+ 
+.uvp-list ul > li:before {
+  content: "";
+  height: 1.5rem;
+  width: 1.5rem;
+  display: block;
+  float: left;
+  margin-left: -1.5rem;
+  margin-right: 1rem;;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.uvp-list ul > li:before { 
+  background: url("../assets/png/green-checkbox.png");
+  background-size: cover;
+  background-position: center;
+  padding: 1.15rem;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -743,9 +823,9 @@ h5 {
 }
 
 .about__content-title {
-  font-weight: 500;
+  font-weight: 800;
   font-size: 2.5rem;
-  margin: 8rem 0;
+  margin: 8rem 0 3rem 0;
   color:#333;
 }
 

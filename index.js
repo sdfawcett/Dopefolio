@@ -5,6 +5,26 @@ window.addEventListener("load", function () {
 });
 */
 
+var observer = new IntersectionObserver(function(entries) {
+  entries.forEach(e =>{
+      let element = e.target;
+      if(e.isIntersecting === true){
+          element.classList.remove("not-visible");
+          element.classList.add("visible");
+      }else{
+          element.classList.remove("visible");
+          element.classList.add("not-visible");
+      }
+  });
+}, { threshold: [0] });
+
+observer.observe(document.querySelector("#first-section"));
+observer.observe(document.querySelector("#second-section"));
+observer.observe(document.querySelector("#third-section"));
+observer.observe(document.querySelector("#fourth-section"));
+observer.observe(document.querySelector("#fifth-section"));
+observer.observe(document.querySelector("#sixth-section"));
+
 // ---
 const hamMenuBtn = document.querySelector('.header__main-ham-menu-cont')
 const smallMenu = document.querySelector('.header__sm-menu')
