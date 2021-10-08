@@ -301,6 +301,10 @@ header h1 {
   letter-spacing: 1px;
 }
 
+.home-hero .heading-primary {
+  position: relative;
+}
+
 .heading-primary {
   font-size: 6rem;
   text-transform: uppercase;
@@ -717,7 +721,7 @@ h5 {
 }
 
 .color-dd-gradient.effect-shine {
-  font-size: 2.9rem;
+
   font-weight: 800;
 }
 
@@ -1213,6 +1217,79 @@ h5 {
 
 /*contact popup styles end*/
 
+/*FAQ Accordion*/
+
+.question-container {
+  font-size: 2rem;
+}
+
+/*Question*/
+.question {
+  position: relative;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 10px 10px 10px 50px;
+  display: block;
+  width:100%;
+  cursor: pointer;
+}
+/*Answer*/
+.answers {
+  padding: 0px 15px;
+  margin: 5px 0;
+  width:100%!important;
+  height: 0;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.questions:checked ~ .answers{
+  height: auto;
+  opacity: 1;
+  padding: 15px;
+  
+}
+
+/*FAQ Toggle*/
+.plus {
+  position: absolute;
+  margin-left: 10px;
+  z-index: 5;
+  font-size: 2em;
+  line-height: 100%;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+
+}
+
+.questions:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+}
+
+.questions {
+  display: none;
+  
+}
+
+/*FAQ Accordion end*/
+
 .contact {
   background: linear-gradient(to right, rgba(20, 160, 68, 0.8), rgba(20, 156, 84, 0.8));
   background-size: cover;
@@ -1327,7 +1404,7 @@ h5 {
 
 .project-cs-hero {
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8));
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1829,32 +1906,31 @@ header.inverted .header__link:hover {
   top: 1em;
   z-index: 999;
   font-size: 4em;
-  fill: #E34F26;
+  fill: #fff;
   transition: color 3.3s ease;
 }
 
-.skills-container svg.html {
+#hero-skills svg.html:hover {
   fill: #E34F26;
-  display: inline-block;
 }
 
-.skills-container svg.css {
+#hero-skills svg.css:hover {
   fill: #1572B6;
 }
 
-.skills-container svg.js {
+#hero-skills svg.js:hover {
   fill: #F7DF1E;
 }
 
-.skills-container svg.shopify {
+#hero-skills svg.shopify:hover {
   fill: #7AB55C;
 }
 
-.skills-container svg.wordpress {
+#hero-skills svg.wordpress:hover {
   fill: #21759B;
 }
 
-.skills-container svg.gsc {
+#hero-skills svg.gsc:hover {
   fill: #458CF5;
 }
 
