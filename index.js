@@ -5,6 +5,7 @@ window.addEventListener("load", function () {
 });
 */
 
+
 var observer = new IntersectionObserver(function(entries) {
   entries.forEach(e =>{
       let element = e.target;
@@ -18,12 +19,12 @@ var observer = new IntersectionObserver(function(entries) {
   });
 }, { threshold: [0] });
 
-observer.observe(document.querySelector("#first-section"));
-observer.observe(document.querySelector("#second-section"));
-observer.observe(document.querySelector("#third-section"));
-observer.observe(document.querySelector("#fourth-section"));
-observer.observe(document.querySelector("#fifth-section"));
-observer.observe(document.querySelector("#sixth-section"));
+observer.observe(document.querySelector("#first-element"));
+observer.observe(document.querySelector("#second-element"));
+observer.observe(document.querySelector("#third-element"));
+observer.observe(document.querySelector("#fourth-element"));
+observer.observe(document.querySelector("#fifth-element"));
+observer.observe(document.querySelector("#sixth-element"));
 
 // ---
 const hamMenuBtn = document.querySelector('.header__main-ham-menu-cont')

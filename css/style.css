@@ -26,6 +26,9 @@ html {
   scroll-behavior: smooth;
 }
 
+
+
+
 @media only screen and (max-width: 75em) {
   html {
     font-size: 59%;
@@ -78,6 +81,14 @@ button {
 
 textarea {
   resize: none;
+}
+
+h2:before {
+  display: block;
+  content: " ";
+  margin-top: -150px;
+  height: 150px;
+  visibility: hidden;
 }
 
 
@@ -432,7 +443,7 @@ header h1 {
 
 .main-container {
   max-width: 120rem;
-  margin: 2rem auto 4rem auto;
+  margin: 0 auto;
   width: 92%;
 }
 
@@ -481,7 +492,7 @@ header h1 {
 }
 
 .sec-pad {
-  padding: 12rem 0;
+  padding: 7rem 0;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -670,6 +681,13 @@ header h1 {
             box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
+/*
+.example-equal-height img {
+  -webkit-filter: drop-shadow(5px 5px 5px #222 );
+  filter: drop-shadow(5px 5px 5px #222);
+}
+*/
+
 .example-equal-height h5 {
   font-size: 1.9rem;
   line-height: 2rem;
@@ -696,7 +714,7 @@ header h1 {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: rgba(20, 156, 84, 0.3);
+  /*background-color: rgba(20, 156, 84, 0.3);*/
 }
 
 .example-equal-height-figure img {
