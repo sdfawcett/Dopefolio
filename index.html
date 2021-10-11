@@ -19,6 +19,7 @@
 </head>
 
 <body>
+
   <!-- old cube loading animation
     <div class="loader">
       <div class="box">
@@ -40,10 +41,10 @@
   </div>
   -->
 
-  <!--popup contact form-->
+  <!--popup contact form
 
   <input type="checkbox" id="email-popup" onChange="this.blur()" />
-  <label for="email-popup" class="email animated waves-effect">
+  <label for="email-popup" id="email-popup-style" class="email animated effect-shine">
     <span class="icons animated">
       <svg class="email-icon animated" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
         version="1.1" x="0px" y="0px" width="512px" height="384px" viewBox="0 0 512 384"
@@ -84,7 +85,7 @@
     </button>
   </div>
 
-  <!--end popup contact form-->
+  end popup contact form-->
 
   <header class="header">
     <div class="header__content">
@@ -110,7 +111,7 @@
             <a href="./index.html#fourth-section-anchor" class="header__link effect-underline">FAQ</a>
           </li>
           <li class="header__link-wrapper">
-            <a href="./index.html#sixth-section-anchor" class="header__link effect-underline">Contact</a>
+            <a href="#sixth-section-anchor" class="header__link-btn">Contact</a>
           </li>
           <!--
           <li class="header__link-wrapper">
@@ -119,8 +120,8 @@
           -->
         </ul>
         <div class="header__main-ham-menu-cont">
-          <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
-          <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
+          <img id="burger" src="./assets/png/icon-hamburger-white-24x24.png" alt="hamburger menu" class="header__main-ham-menu" />
+          <img id="burger-close" src="./assets/png/close-white-24x24.png" alt="hamburger menu close"
             class="header__main-ham-menu-close d-none" />
         </div>
       </div>
@@ -129,19 +130,23 @@
       <div class="header__sm-menu-content">
         <ul class="header__sm-menu-links">
           <li class="header__sm-menu-link">
-            <a href="./index.html"> Home </a>
+            <a href="#third-section-anchor">Services</a>
           </li>
 
           <li class="header__sm-menu-link">
-            <a href="./index.html#about"> About </a>
+            <a href="#first-section-anchor">Our Process</a>
           </li>
 
           <li class="header__sm-menu-link">
-            <a href="./index.html#projects"> Projects </a>
+            <a href="#fifth-section-anchor">Our Work</a>
           </li>
 
           <li class="header__sm-menu-link">
-            <a href="./index.html#contact"> Contact </a>
+            <a href="#fourth-section-anchor">FAQ</a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="#sixth-section-anchor">Contact</a>
           </li>
         </ul>
       </div>
@@ -385,7 +390,7 @@
       <h2 id="fourth-section-anchor" class="heading heading-sec">
         <span class="heading-sec__main">FAQ</span>
       </h2>
-      <div id="fourth-element"></div> 
+      <div id="fourth-element"> 
       <div class="question-container">
         <input type="checkbox" id="question1" name="q" class="questions">
         <div class="plus">+</div>
@@ -393,7 +398,7 @@
           What type of projects do you take on?
         </label>
         <div class="answers">
-          We mainly do eCommerce projects on the Shopify platform — things like theme customizations, store setups, platform migrations, store and sales-funnel optimizations, Shopify 2.0 upgrades, app integrations, and various types of training.
+          We do eCommerce projects primarily on the Shopify platform &#8212; things like theme customizations, store setups, platform migrations, store and sales-funnel optimizations, Shopify 2.0 upgrades, app integrations, and various types of training.
         </div>
       </div>
 
@@ -404,7 +409,8 @@
           What’s so good about Shopify?
         </label>
         <div class="answers">
-          COVID-19 is pushing many more businesses online, and I think the Shopify platform has the most buzz and long-term potential behind it. It’s an accessible, robust eCommerce platform that offers a lot of features out-of-the-box. It takes a lot of complexity out of the equation for end-users, and it offers powerful features for developers who build Shopify solutions.
+          COVID-19 is pushing many more businesses online, and we think the Shopify platform has the most buzz and long-term potential behind it. It’s an accessible, robust eCommerce platform that offers a lot of features out-of-the-box. It takes a lot of complexity out of the equation for end-users, and it offers powerful features for developers who build Shopify solutions.<br><br>
+          And now that Google Shopping is funneling more users to Shopify stores than ever before, there couldn't be a better time to invest in a new Shopify store.
         </div>
       </div>
 
@@ -417,7 +423,7 @@
         <div class="answers">
           Shopify is already a top-notch platform, and they’re making it even better with Shopify 2.0. The most exciting changes for clients are all the new ways to customize your online store (with or without code). Things like sections on every page, app blocks, support for dynamic content sources, and collection filtering open up a lot of new possibilities for online store owners.<br><br>
           
-          Also the new theme architecture means it’s easier for Mindful to make your online store blazing fast so you get the best possible store performance.
+          Also the new theme architecture means it’s easier for Mindful to make your Shopify store blazing fast so you get the best possible store performance.
         </div>
       </div>
 
@@ -428,9 +434,9 @@
           Shopify makes eCommerce seem easy. Can’t I just build a store myself?
         </label>
         <div class="answers">
-          Shopify is already a top-notch platform, and they’re making it even better with Shopify 2.0. The most exciting changes for clients are all the new ways to customize your online store (with or without code). Things like sections on every page, app blocks, support for dynamic content sources, and collection filtering open up a lot of new possibilities for online store owners.<br><br>
-          
-          Also the new theme architecture means it’s easier for me to make your online store blazing fast so you get the best possible Google search performance.
+          Many people just want someone to do their store setup so they can take it and run with it — we're happy to do that. Down the road, if you get stuck and need help, we can do that too.<br><br>
+
+          For anyone interested in building a more complex eCommerce solution, the more important question is “do you have the time and patience to learn how to build it”? If you don’t have that time to spend, and you want to get the most out of your store from day one, then why not leverage Mindful's 20 years of experience building websites and digital solutions?
         </div>
       </div>
 
@@ -438,12 +444,10 @@
         <input type="checkbox" id="question5" name="q" class="questions">
         <div class="plus">+</div>
         <label for="question5" class="question">
-          How do you charge for projects ?
+          How do you charge for projects?
         </label>
         <div class="answers">
-          Shopify is already a top-notch platform, and they’re making it even better with Shopify 2.0. The most exciting changes for clients are all the new ways to customize your online store (with or without code). Things like sections on every page, app blocks, support for dynamic content sources, and collection filtering open up a lot of new possibilities for online store owners.<br><br>
-          
-          Also the new theme architecture means it’s easier for me to make your online store blazing fast so you get the best possible Google search performance.
+          We provide flat-rate quotes for our store design and development packages, so you know exactly what investment you'll be putting into the project before you start.
         </div>
       </div>
 
@@ -451,39 +455,13 @@
         <input type="checkbox" id="question6" name="q" class="questions">
         <div class="plus">+</div>
         <label for="question6" class="question">
-          What does your design process look like?
+          I already have a Shopify store. Can Mindful help me make it better?
         </label>
         <div class="answers">
-          Shopify is already a top-notch platform, and they’re making it even better with Shopify 2.0. The most exciting changes for clients are all the new ways to customize your online store (with or without code). Things like sections on every page, app blocks, support for dynamic content sources, and collection filtering open up a lot of new possibilities for online store owners.<br><br>
-          
-          Also the new theme architecture means it’s easier for me to make your online store blazing fast so you get the best possible Google search performance.
+          We can definitely help you with your existing Shopify site. We'll consult with you to determine your goals and preferences, create design mockups if necessary, and execute your vision for your store.
         </div>
       </div>
-
-      <div class="question-container">
-        <input type="checkbox" id="question7" name="q" class="questions">
-        <div class="plus">+</div>
-        <label for="question7" class="question">
-          What metrics do you use to measure success?
-        </label>
-        <div class="answers">
-          Shopify is already a top-notch platform, and they’re making it even better with Shopify 2.0. The most exciting changes for clients are all the new ways to customize your online store (with or without code). Things like sections on every page, app blocks, support for dynamic content sources, and collection filtering open up a lot of new possibilities for online store owners.<br><br>
-          
-          Also the new theme architecture means it’s easier for me to make your online store blazing fast so you get the best possible Google search performance.
-        </div>
-      </div>
-
-      <div class="question-container">
-        <input type="checkbox" id="question8" name="q" class="questions">
-        <div class="plus">+</div>
-        <label for="question8" class="question">
-          What if I need help after the project is complete?
-        </label>
-        <div class="answers">
-          Shopify is already a top-notch platform, and they’re making it even better with Shopify 2.0. The most exciting changes for clients are all the new ways to customize your online store (with or without code). Things like sections on every page, app blocks, support for dynamic content sources, and collection filtering open up a lot of new possibilities for online store owners.<br><br>
-          
-          Also the new theme architecture means it’s easier for me to make your online store blazing fast so you get the best possible Google search performance.
-        </div>
+      
       </div>
       </div>
     
@@ -491,7 +469,7 @@
 
 
 
-  <section class="projects sec-pad">
+  <section class="about sec-pad">
     <div class="main-container">
       <h2 id="fifth-section-anchor" class="heading heading-sec heading-sec__mb-bg">
         <span class="heading-sec__main">Online Stores</span>

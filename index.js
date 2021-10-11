@@ -75,8 +75,11 @@ window.onscroll = function() {
   if (window.scrollY >= scrollTrigger || window.pageYOffset >= scrollTrigger) {
     document.getElementsByTagName("header")[0].classList.add(className);
     document.getElementById("logo").src="./assets/png/mwp-logo-only.png";
+    document.getElementById("burger").src="./assets/png/icon-hamburger-24x24.png";
   } else {
     document.getElementsByTagName("header")[0].classList.remove(className);
     document.getElementById("logo").src="./assets/png/mwp-logo-only-white.png";
+    document.getElementById("burger").src="./assets/png/icon-hamburger-white-24x24.png";
   }
 };
+

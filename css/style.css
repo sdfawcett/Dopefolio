@@ -1,17 +1,4 @@
-/*
-0 - 600px:      Phone
-600 - 900px:    Tablet portrait
-900 - 1200px:   Tablet landscape
-[1200 - 1800] is where our normal styles apply
-1800px + :      Big desktop
-$breakpoint arguement choices:
-- phone
-- tab-port
-- tab-land
-- big-desktop
 
-Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only inside media queries
-*/
 *,
 *::after,
 *::before {
@@ -82,6 +69,8 @@ button {
 textarea {
   resize: none;
 }
+
+/* this h2 style is for the scroll offset that's needed due to the fixed header*/
 
 h2:before {
   display: block;
@@ -326,6 +315,35 @@ header h1 {
   font-weight: 300;
   letter-spacing: 1px;
 }
+
+.header__logo-sub {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 78.125em) {
+  /*1250px*/
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  .header__logo-sub {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 67.5em) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .header__logo-sub {
+    font-size: 1.9rem;
+  }
+}
+
 
 .home-hero .heading-primary {
   position: relative;
@@ -1121,8 +1139,9 @@ ol li::before {
   position: fixed;
   bottom: 15px;
   right: 15px;
-  width: 60px;
-  height: 60px;
+  width: 90px;
+  height: 90px;
+  z-index: 9999;
   background: #149c54;
   border-radius: 100%;
   cursor: pointer;
@@ -1206,7 +1225,7 @@ ol li::before {
   position: fixed;
   bottom: 0;
   right: 90px;
-  width: 276px;
+  width: 330px;
   padding: 51px 15px 15px 15px;
   background: #eee;
   box-sizing: border-box;
@@ -1453,6 +1472,8 @@ ol li::before {
 .answers {
   padding: 0px 15px;
   margin: 5px 0;
+  font-weight: 300;
+  font-size: 1.8rem;
   width:100%!important;
   height: 0;
   overflow: hidden;
@@ -1476,8 +1497,10 @@ ol li::before {
 .plus {
   position: absolute;
   margin-left: 10px;
+  color:#149c54;
   z-index: 5;
   font-size: 2em;
+  font-weight: 800;;
   line-height: 100%;
   -webkit-user-select: none;    
   -moz-user-select: none;
@@ -1806,6 +1829,15 @@ ol li::before {
   margin-right: 1.5rem;
 }
 
+@media only screen and (max-width: 90.625em) {
+  /*1450px*/
+  .header__logo-img-cont {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-right: 1.2rem;
+  }
+  }
+
 @media only screen and (max-width: 56.25em) {
   .header__logo-img-cont {
     width: 4.5rem;
@@ -1822,13 +1854,6 @@ ol li::before {
   display: block;
 }
 
-.header__logo-sub {
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
-
 .header__links {
   display: flex;
   gap:2em;
@@ -1838,7 +1863,21 @@ ol li::before {
   position: relative;
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 78.125em) {
+  /*1250px*/
+  .header__links {
+    gap:1em;
+  }
+}
+
+@media only screen and (max-width: 67.5em) {
+  /*1080px*/
+  .header__links {
+    gap:.25em;
+  }
+}
+
+@media only screen and (max-width: 64em) {
   .header__links {
     display: none;
   }
@@ -1900,6 +1939,24 @@ header.inverted .header__link-btn:hover {
   transform: translateY(-3px);
 }
 
+@media only screen and (max-width: 90.625em) {
+  /*1450px*/
+  .header__link  {
+    font-size: 1.3rem;
+    padding: 2.2rem 2rem;
+  }
+
+  .header__link-btn {
+    font-size: 1.3rem;
+    padding: 1.5rem 2rem;
+  }
+
+  header.inverted .header__link-btn {
+    font-size: 1.3rem;
+    padding: 1.5rem 2rem;
+  }
+  }
+
 /*underline effect for nav menu items*/
 a.effect-underline:after {
 	content: '';
@@ -1949,7 +2006,7 @@ header.inverted .header__link:hover {
   padding: 2.2rem 0;
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 64em) {
   .header__main-ham-menu-cont {
     display: block;
   }
@@ -1981,7 +2038,7 @@ header.inverted .header__link:hover {
   opacity: 0;
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 64em) {
   .header__sm-menu--active {
     visibility: visible;
     opacity: 1;
@@ -2015,8 +2072,10 @@ header.inverted .header__link:hover {
 }
 
 .main-footer {
-  background: #000;
   color: #fff;
+  background: linear-gradient(to right, rgba(20, 160, 68, 0.8), rgba(20, 156, 84, 0.8));
+  background-size: cover;
+  background-position: center;
 }
 
 .main-footer__upper {
