@@ -548,7 +548,7 @@ header h1 {
 }
 
 .btn--theme {
-  background: #0062b9;
+  background: #149c54;
   color: #fff;
 }
 
@@ -684,6 +684,15 @@ header h1 {
   max-width: 90rem;
   width: 92%;
 }
+
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-in {
+   opacity:0;  /* make things invisible upon start */
+   animation:fadeIn ease-in 1;
+   animation-fill-mode:forwards;
+   animation-duration:1.4s;
+  }
 
 
 .home-hero__info {
@@ -1098,7 +1107,7 @@ ol li::before {
 
 /* effect-shine */
 .effect-shine {
-  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.7) 30%, #000 50%, rgba(0,0,0,.7) 70%);
   -webkit-mask-size: 200%;
   animation: shine 2s infinite;
 }
@@ -2265,6 +2274,7 @@ header.inverted .header__link:hover {
 @media only screen and (max-width: 56.25em) {
   .main-footer__upper {
     padding: 6rem 0;
+    display: block;
   }
 }
 
@@ -2281,6 +2291,7 @@ header.inverted .header__link:hover {
 @media only screen and (max-width: 56.25em) {
   .main-footer__row-1 {
     margin-bottom: 5rem;
+    text-align: center;
   }
 }
 
@@ -2293,6 +2304,8 @@ header.inverted .header__link:hover {
 @media only screen and (max-width: 56.25em) {
   .main-footer__row-2 {
     width: 100%;
+    max-width: 100%;
+    text-align: center;
   }
 }
 
@@ -2318,7 +2331,7 @@ header.inverted .header__link:hover {
 
 .main-footer__lower {
   padding: 4rem 0;
-  border-top: 1px solid #444;
+  border-top: 1px solid #eee;
   color: #eee;
   font-size: 1.2rem;
   text-align: left;
@@ -2343,6 +2356,25 @@ header.inverted .header__link:hover {
   justify-content: center;
 }
 
+#footer-skills.skills-flex {
+  display: flex;
+  margin-bottom: 2em;
+  justify-content: flex-start;
+}
+
+@media only screen and (max-width: 56.25em) {
+  #footer-skills.skills-flex {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 31.313em) {
+  /*501px*/
+  #footer-skills.skills-flex a {
+    padding:1em;
+  }
+}
+
 .skills-container {
   position: relative;
   height: 100px;
@@ -2361,6 +2393,15 @@ header.inverted .header__link:hover {
   font-size: 4em;
   fill: #fff;
   transition: color 3.3s ease;
+}
+
+#footer-skills .skills-container svg {
+  left:0;
+  top:0;
+}
+
+#footer-skills .skills-container {
+  margin:0 0 1em 0;
 }
 
 @media only screen and (max-width: 31.25em) {

@@ -25,6 +25,7 @@ observer.observe(document.querySelector("#second-element"));
 observer.observe(document.querySelector("#fourth-element"));
 observer.observe(document.querySelector("#fifth-element"));
 observer.observe(document.querySelector("#sixth-element"));
+observer.observe(document.querySelector("#seventh-element"));
 
 // ---
 const hamMenuBtn = document.querySelector('.header__main-ham-menu-cont')
