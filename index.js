@@ -76,10 +76,12 @@ window.onscroll = function() {
     document.getElementsByTagName("header")[0].classList.add(className);
     document.getElementById("logo").src="./assets/png/mwp-logo-only.png";
     document.getElementById("burger").src="./assets/png/icon-hamburger-24x24.png";
+    document.getElementById("burger-close").src="./assets/png/close-24x24.png";
   } else {
     document.getElementsByTagName("header")[0].classList.remove(className);
     document.getElementById("logo").src="./assets/png/mwp-logo-only-white.png";
     document.getElementById("burger").src="./assets/png/icon-hamburger-white-24x24.png";
+    document.getElementById("burger-close").src="./assets/png/close-white-24x24.png";
   }
 };
 
