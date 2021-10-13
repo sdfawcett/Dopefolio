@@ -592,10 +592,8 @@ header h1 {
 
 .home-hero {
   color: #fff;
-  /*background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
-  background-position: center;*/
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/jpeg/online-shopping-cropped.jpg');
-  background-position: top center;
+  background-position: center;
   background-repeat: none;
   background-size: cover;
   height: 100vh;
