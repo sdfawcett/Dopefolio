@@ -41,7 +41,6 @@ body {
   font-family: sans-serif;
   overflow-x: hidden;
   overflow-y: scroll;
-  font-family: 'Montserrat', sans-serif;
   color:#333;
 }
 
@@ -1261,7 +1260,7 @@ ol li::before {
 }
 
 
-/*contact popup styles begin*/
+/*contact popup styles begin
 
 .animated {
   -webkit-transition: all 0.3s;
@@ -1628,7 +1627,7 @@ ol li::before {
   }
 }
 
-/*contact popup styles end*/
+contact popup styles end*/
 
 /*FAQ Accordion*/
 
