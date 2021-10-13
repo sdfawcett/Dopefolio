@@ -24,15 +24,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <style>
     @font-face {
-        font-family: "Montserrat";
-        src: local('Montserrat'), local('Montserrat'), url('assets/fonts/montserrat-medium-webfont.woff') format('woff');
-        font-display: swap;
+      font-family: "Montserrat";
+      src: local('Montserrat'), local('Montserrat'), url('assets/fonts/montserrat-medium-webfont.woff') format('woff');
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Abril Fatface";
+      src: local('Abril Fatface'), local('Abril Fatface'), url('assets/fonts/abrilfatface-regular-webfont.woff') format('woff');
+      font-display: swap;
     }
 
     body {
-        font-family: "Montserrat", sans-serif;
+      font-family: "Montserrat", sans-serif;
 
     }
+
+    ol li::before {
+      font-family: 'Abril Fatface', serif;
+    }
+
   </style>
 </head>
 
