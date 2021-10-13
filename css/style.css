@@ -593,7 +593,7 @@ header h1 {
 .home-hero {
   color: #fff;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/jpeg/online-shopping-cropped.jpg');
-  background-position: center;
+  background-position: top center;
   background-repeat: none;
   background-size: cover;
   height: 100vh;
