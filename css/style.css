@@ -1640,6 +1640,7 @@ contact popup styles end*/
   padding: 10px 10px 10px 50px;
   display: block;
   width:100%;
+  text-decoration: underline;
   cursor: pointer;
 }
 /*Answer*/
