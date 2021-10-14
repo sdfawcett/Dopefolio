@@ -380,7 +380,7 @@ header h1 {
 }
 
 .heading-primary {
-  font-size: 6rem;
+  font-size: 5.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   text-align: left;
@@ -579,8 +579,8 @@ header h1 {
 
 .text-primary {
   color: #fff;
-  font-size: 2.2rem;
-  margin-bottom: 2rem;
+  font-size: 2rem;
+  margin-bottom: 1.8rem;
   text-align: left;
   width: 100%;
   line-height: 1.6;
@@ -605,9 +605,7 @@ header h1 {
 
 @media only screen and (max-width: 81.25em) {
   /*1300px*/
-  .text-primary {
-    font-size: 2rem;
-  }
+
   
   .text-primary.w-piping {
     font-size: 1.5rem;
@@ -714,7 +712,7 @@ header h1 {
 
 .home-hero__content-l {
   position: absolute;
-  top: 55%;
+  top: 46%;
   left: 28%;
   transform: translate(-50%, -50%);
   max-width: 90rem;
@@ -723,7 +721,7 @@ header h1 {
 
 .home-hero__content-r {
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 76%;
   transform: translate(-50%, -50%);
   max-width: 90rem;
