@@ -400,6 +400,14 @@ header h1 {
   color:#149c54;
 }
 
+.white {
+  color:#fff;
+}
+
+.black {
+  color:#000;
+}
+
 .heading-primary .mindful-green {
   font-weight: 700;
 }
@@ -591,14 +599,14 @@ header h1 {
   color: #fff;
   font-size: 1.8rem;
   margin-bottom: 2rem;
-  text-align: left;
+  text-align: right;
   width: 100%;
   line-height: 1.6;
   font-weight: 300;
 }
 
-.text-primary.w-piping span.mindful-green {
-  color: #149c54;
+.text-primary.w-piping span.black {
+  color: #000;
   font-size: 2.4rem;
   font-weight: 800;
 }
@@ -611,7 +619,7 @@ header h1 {
     font-size: 1.5rem;
   }
   
-  .text-primary.w-piping span.mindful-green {
+  .text-primary.w-piping span.black {
     font-size: 2.2rem;
   }
 }
@@ -632,15 +640,15 @@ header h1 {
   background-position: top center;
   background-repeat: none;
   background-size: cover;
-  height: 100vh;
-  min-height: 95rem;
-  max-height: 120rem;
+  height: 80vh;
+  min-height: 65rem;
+  max-height: 130rem;
   position: relative;
 }
 
 @media only screen and (max-width: 68.75em) {
   .home-hero {
-    min-height: 105rem;
+    min-height: 100rem;
   }
 }
 
@@ -712,20 +720,38 @@ header h1 {
 
 .home-hero__content-l {
   position: absolute;
-  top: 46%;
+  top: 59%;
   left: 28%;
   transform: translate(-50%, -50%);
   max-width: 90rem;
   width: 47%;
 }
 
+.home-hero__content-l2 {
+  transform: none;
+  width: 65%;
+  border-right: 1px solid #fff;
+  padding-right: 5rem;
+}
+
+.home-hero__content-l2 .heading-primary {
+  font-size:4.5rem;
+  text-align: right;
+}
+
 .home-hero__content-r {
   position: absolute;
-  top: 35%;
+  top: 47%;
   left: 76%;
   transform: translate(-50%, -50%);
   max-width: 90rem;
   width: 35%;
+}
+
+.home-hero__content-r2 {
+  transform: none;
+  width: 35%;
+  padding-left:3rem;
 }
 
 @media screen and (max-width: 64em) {
@@ -768,10 +794,6 @@ header h1 {
     transform:none;
     margin:0 auto;
   }
-
-  .home-hero {
-    min-height: 110rem;
-}
 }
 
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -781,6 +803,160 @@ header h1 {
    animation:fadeIn ease-in 1;
    animation-fill-mode:forwards;
    animation-duration:1.4s;
+  }
+
+  /*CTA styles*/
+  .ctaBlock-header,
+  .ctaBlock-body p,
+  .ctaBlock-action {
+    font-family: "Montserrat";
+    font-weight: 300;
+  }
+  
+  .ctaBlock {
+    font-size: 1.125rem;
+  }
+  @media screen and (max-width: 500px) {
+    .ctaBlock {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 340px) {
+    .ctaBlock {
+      font-size: 0.875rem;
+    }
+  }
+ 
+  .ctaBlock.ctaBlock--alt {
+    background-color: #ff7070;
+  }
+  .ctaBlock.ctaBlock--alt2 {
+    background: linear-gradient(to right, rgba(20, 160, 68, 0.8), rgba(20, 156, 84, 0.8));
+    background-size: cover;
+    background-position: center;
+  }
+  .ctaBlock.ctaBlock--centered {
+    text-align: center;
+  }
+  .ctaBlock.ctaBlock--right {
+    text-align: right;
+  }
+  .ctaBlock.ctaBlock--justify {
+    text-align: justify;
+  }
+  .ctaBlock.ctaBlock--justify .ctaBlock-header {
+    text-align: left;
+  }
+  .ctaBlock .ctaBlock-inner {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3em 2em 3.5em;
+    max-width: 100em;
+    display: flex;
+  }
+  @media screen and (min-width: 45em) {
+    .ctaBlock .ctaBlock-inner {
+      padding-top: 4em;
+      padding-bottom: 4em;
+    }
+  }
+  .ctaBlock .ctaBlock-inner .ctaBlock-header {
+    font-size: 2.5em;
+    line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    color:#fff;
+  }
+  .ctaBlock .ctaBlock-body p {
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+  .ctaBlock .ctaBlock-action {
+    transition: padding-top 0.3s, transform 0.3s;
+    display: inline-block;
+    font-size: 1.25em;
+    text-decoration: none;
+    margin-top: 0.5em;
+    padding-bottom: 0.2em;
+    border-bottom: 0.1em solid rgba(255, 255, 255, 0.9);
+  }
+  .ctaBlock .ctaBlock-action:hover, .ctaBlock .ctaBlock-action:active, .ctaBlock .ctaBlock-action:visited {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .ctaBlock .home-hero__content-l2 .text-primary {
+    color: #fff;
+  font-size: 2rem;
+  margin-bottom: 1.8rem;
+  text-align: right;
+  width: 100%;
+  line-height: 1.6;
+  font-weight: 300;
+  }
+
+  .ctaBlock .home-hero__content-r2 .text-primary {
+    color: #fff;
+  font-size: 2rem;
+  margin-bottom: 1.8rem;
+  text-align: left;
+  width: 100%;
+  line-height: 1.6;
+  font-weight: 300;
+  }
+
+  .ctaBlock .home-hero__cta {
+    margin: 5rem 0 0;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 64em) {
+    /*1024px*/
+    .home-hero__content-l2 .heading-primary {
+      font-size: 4rem;
+    }
+
+    .ctaBlock .home-hero__content-l2 .text-primary {
+      font-size: 1.6rem;
+    }
+
+    .ctaBlock .home-hero__content-r2 .text-primary {
+      font-size: 1.8rem;
+    }
+  }
+
+  @media screen and (max-width: 50.625em) {
+    /*810px*/
+    .ctaBlock .ctaBlock-inner {
+      flex-direction: column;
+    }
+
+    .ctaBlock .home-hero__content-l2 {
+      width: 100%;
+    }
+
+    .ctaBlock .home-hero__content-r2 {
+      width: 100%;
+    }
+
+    .ctaBlock .home-hero__content-l2 .heading-primary {
+      text-align: center;
+    }
+
+    .ctaBlock .home-hero__content-l2 .text-primary {
+      text-align: center;
+    }
+
+    .ctaBlock .home-hero__content-l2 {
+      border: none;
+      padding-right:0;
+      margin-bottom:2.5rem;
+    }
+
+    .ctaBlock .home-hero__content-r2 .text-primary {
+      text-align: center;
+    }
   }
 
 .iframe-container {
@@ -1743,6 +1919,10 @@ contact popup styles end*/
 .question {
   position: relative;
   background: #f9f9f9;
+  border-radius: 4px;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   margin: 0;
   padding: 10px 10px 10px 50px;
   display: block;
@@ -1778,7 +1958,7 @@ contact popup styles end*/
 /*FAQ Toggle*/
 .plus {
   position: absolute;
-  margin-left: 10px;
+  margin: 7px 10px 10px 10px;
   color:#149c54;
   z-index: 5;
   font-size: 2em;
