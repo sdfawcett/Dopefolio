@@ -2198,10 +2198,42 @@ contact popup styles end*/
 }
 
 .project-cs-hero {
+  height:85vh;
   color: #fff;
-  background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8));
-  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/jpeg/online-shopping.jpg);
   background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  position: relative;
+}
+
+#galaxy-box .project-cs-hero {
+  height:85vh;
+  color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/jpeg/milky-way.jpg);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  position: relative;
+}
+
+#immortal-hype .project-cs-hero {
+  height:85vh;
+  color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/jpeg/immortal-hype-collage.jpg);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+  position: relative;
+}
+
+#slate-coffee .project-cs-hero {
+  height:85vh;
+  color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/jpeg/slate-coffee-banner.jpg);
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
   position: relative;
 }
 

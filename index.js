@@ -5,6 +5,10 @@ window.addEventListener("load", function () {
 });
 */
 
+//copyright date
+
+document.querySelector('#copyright-year').innerText = new Date().getFullYear();
+
 
 var observer = new IntersectionObserver(function(entries) {
   entries.forEach(e =>{
