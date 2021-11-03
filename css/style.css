@@ -1369,6 +1369,44 @@ ol li::before {
   }
 }
 
+/*4 item grid on galaxy box project info page*/
+
+#galaxy-box ol {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+#galaxy-box ol li {
+  counter-increment: my-awesome-counter;
+  display: flex;
+  width: 50%;
+  font-size: 2rem;
+  margin-bottom: 3.5rem;
+  padding-right: 5rem;
+}
+#galaxy-box ol li::before {
+  content: "0" counter(my-awesome-counter);
+  font-weight: bold;
+  font-size: 4rem;
+  margin-right: 0.5rem;
+  line-height: 1;
+}
+
+@media only screen and (max-width: 56.25em) {
+  #galaxy-box ol li {
+    font-size: 1.7rem;
+    margin-bottom: 3.5rem;
+    padding-right: 5rem;
+  }
+
+  #galaxy-box ol li::before {
+    margin-right: 1rem;
+  }
+}
+
 
 .timeline-wrap {
   width: 300px;
