@@ -398,7 +398,7 @@ lite-youtube.lyt-activated > .lty-playbtn {
 }
 
 .visible{
-  animation: scaleup 200ms ease-out;
+  animation: scaleup 100ms ease-out;
 }
 .not-visible{
   transform: scale(.5);
