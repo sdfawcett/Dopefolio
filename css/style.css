@@ -426,6 +426,10 @@ header h1 {
   letter-spacing: 1px;
 }
 
+.footer .header__logo-sub {
+  font-size: 2rem;
+}
+
 @media only screen and (max-width: 78.125em) {
   /*1250px*/
   header h1 {
@@ -589,6 +593,16 @@ header h1 {
   line-height: 1.6;
 }
 
+.contact .heading-sec__sub {
+  text-align: left;
+}
+
+@media only screen and (max-width: 43.750em) {
+  .contact .heading-sec__sub {
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 37.5em) {
   .heading-sec__sub {
     font-size: 1.8rem;
@@ -596,7 +610,7 @@ header h1 {
 }
 
 .heading-sec__sub--lt {
-  color: #eee;
+  color: #fff;
 }
 
 .heading-sm {
@@ -1369,6 +1383,16 @@ ol li::before {
   }
 }
 
+@media only screen and (max-width: 43.750em) {
+  ol {
+    flex-direction: column;
+  }
+
+  ol li {
+    width:95%;
+  }
+}
+
 /*4 item grid on galaxy box project info page*/
 
 #galaxy-box ol {
@@ -1655,7 +1679,7 @@ ol li::before {
 
 .projects__row-content-desc {
   font-size: 1.8rem;
-  color: grey;
+  color: #333;
   max-width: 60rem;
   line-height: 1.7;
   margin-bottom: 3rem;
@@ -2039,83 +2063,76 @@ contact popup styles end*/
 
 /*FAQ Accordion*/
 
-.question-container {
-  font-size: 2rem;
+#faq-tabs input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
 }
 
-/*Question*/
-.question {
-  position: relative;
-  background: #f9f9f9;
-  border-radius: 4px;
-    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  margin: 0;
-  padding: 10px 10px 10px 50px;
-  display: block;
-  width:100%;
-  text-decoration: underline;
+.tabs {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+.tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  font-size: 1.8rem;
+  background: #149c54;
+  font-weight: bold;
+  cursor: pointer;
+  /* Icon */
+}
+.tab-label:hover {
+  background: #094726;
+  ;
+}
+.tab-label::after {
+  content: "❯";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s;
+}
+.tab-content {
+  font-size: 1.8rem;
+  max-height: 0;
+  padding: 0 1em;
+  color: #333;
+  background: white;
+  transition: all 0.35s;
+}
+.tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #2c3e50;
   cursor: pointer;
 }
-/*Answer*/
-.answers {
-  padding: 0px 15px;
-  margin: 5px 0;
-  font-weight: 300;
-  font-size: 1.8rem;
-  width:100%!important;
-  height: 0;
-  overflow: hidden;
-  z-index: 1;
-  position: relative;
-  opacity: 0;
-  -webkit-transition: .3s ease;
-  -moz-transition: .3s ease;
-  -o-transition: .3s ease;
-  transition: .3s ease;
+.tab-close:hover {
+  background: #094726;
 }
 
-.questions:checked ~ .answers{
-  height: auto;
-  opacity: 1;
-  padding: 15px;
-  
+input:checked + .tab-label {
+  background: #094726;
+}
+input:checked + .tab-label::after {
+  transform: rotate(90deg);
+}
+input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 2rem;
 }
 
-/*FAQ Toggle*/
-.plus {
-  position: absolute;
-  margin: 7px 10px 10px 10px;
-  color:#149c54;
-  z-index: 5;
-  font-size: 2em;
-  font-weight: 800;;
-  line-height: 100%;
-  -webkit-user-select: none;    
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  -webkit-transition: .3s ease;
-  -moz-transition: .3s ease;
-  -o-transition: .3s ease;
-  transition: .3s ease;
 
-}
-
-.questions:checked ~ .plus {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-
-}
-
-.questions {
-  display: none;
-  
-}
 
 /*FAQ Accordion end*/
 
@@ -2138,7 +2155,7 @@ contact popup styles end*/
   text-align: right;
   width: 95%;
   border-radius: 5px;
-  margin: 5rem auto 0 auto;
+  margin: 5rem auto 5rem auto;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -2438,6 +2455,10 @@ contact popup styles end*/
   transition: color .3s;
 }
 
+.footer .header__logo-container {
+  color: #fff;
+}
+
 .header.inverted .header__logo-container {
   color: #333;
   transition: color .3s;
@@ -2445,6 +2466,10 @@ contact popup styles end*/
 
 .header__logo-container:hover {
   color: #149c54;
+}
+
+.footer .header__logo-container:hover {
+  color: #fff;
 }
 
 .header__logo-img-cont {
@@ -2477,6 +2502,11 @@ contact popup styles end*/
   .header__logo-img-cont {
     width: 4.5rem;
     height: 4rem;
+  }
+
+  .footer .header__logo-img-cont {
+    width: 4.5rem;
+    height: 4.5rem;
   }
 }
 
@@ -2704,6 +2734,130 @@ header.inverted .header__link:hover {
 
 .header__sm-menu-link-last {
   border-bottom: 0;
+}
+
+.footer {
+  width: 100%;
+}
+
+.footer .services, .footer .social-media, .footer .links, .footer .details {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.footer h1 {
+  font-size: 2rem;
+}
+
+.footer .details .tagline {
+  font-weight: 800;
+}
+
+@media (max-width: 22.500em) {
+  /*360 pixels*/
+  .footer h1 {
+    font-size: 1.6rem;
+  }
+}
+
+.footer .heading {
+
+  width: 100%;
+  text-transform: uppercase;
+  margin: 3% 0 3% 15%;
+  font-family: "Montserrat";
+}
+
+@media (max-width: 1024px) {
+  .footer .heading {
+
+    margin: 3% 0 3% 8%;
+
+  }
+}
+
+@media (max-width: 47.938em) {
+  /*767 pixels*/
+  .footer .heading {
+
+    margin: 3% 0 3% 2%;
+
+  }
+}
+
+@media (max-width: 28.125em) {
+  /*450 pixels*/
+  .footer .heading {
+
+    width: 99%;
+
+  }
+}
+
+.footer .content {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.5rem;
+  color:#fff;
+}
+
+.footer .content p {
+  margin-bottom: 1.3rem;
+  color: rgba(0, 0, 0, 0.829);
+}
+
+.footer .content a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer .content a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.footer .content h4 {
+  margin-bottom: 1.3rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 22.5em) {
+  .footer .content h4 {
+    font-size: 1.6rem;
+  }
+
+  .footer .content p {
+    font-size: 1.5rem;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1.8rem 0;
+  color:#fff;
+  font-size: 1.3rem;
+}
+
+footer hr {
+  margin: 2rem 0;
+}
+
+@media (max-width: 767px) {
+  .footer .content {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .footer {
+    position: unset;
+    padding: 0 2rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .footer {
+    position: unset;
+  }
 }
 
 .main-footer {

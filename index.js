@@ -27,7 +27,7 @@ observer.observe(document.querySelector("#first-element"));
 observer.observe(document.querySelector("#second-element"));
 //observer.observe(document.querySelector("#third-element"));
 observer.observe(document.querySelector("#fourth-element"));
-observer.observe(document.querySelector("#fifth-element"));
+//observer.observe(document.querySelector("#fifth-element"));
 observer.observe(document.querySelector("#sixth-element"));
 observer.observe(document.querySelector("#seventh-element"));
 
