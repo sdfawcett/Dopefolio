@@ -1377,7 +1377,7 @@ ol li::before {
   ol li {
     font-size: 1.7rem;
     margin-bottom: 3.5rem;
-    padding-right: 5rem;
+    padding-right: 0rem;
   }
 
   ol li::before {
