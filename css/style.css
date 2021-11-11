@@ -750,6 +750,10 @@ header h1 {
   position: relative;
 }
 
+.no-js .home-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/jpeg/online-shopping-cropped.jpg');
+}
+
 @media only screen and (max-width: 64em) {
   .home-hero {
     min-height: 100rem;
