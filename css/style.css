@@ -1621,16 +1621,12 @@ ol li::before {
 }
 
 .projects__row {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  grid-gap: 5rem;
+  display: flex;
   margin-bottom: 11rem;
 }
 
 @media only screen and (max-width: 56.25em) {
   .projects__row {
-    grid-template-columns: 1fr;
-    grid-gap: 2rem;
     margin-bottom: 8rem;
   }
 }

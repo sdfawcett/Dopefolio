@@ -96,7 +96,7 @@ lite-youtube {
   background-position: center center;
   background-size: cover;
   cursor: pointer;
-  max-width: 720px;
+  max-width:900px;
 }
 
 /* gradient */
@@ -768,6 +768,18 @@ ol li::before {
   max-width: 60rem;
   line-height: 1.7;
   margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .projects__row {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+   }
+
+   .projects__row-content {
+
+  align-items: center;
+}
 }
 
 #faq-tabs input {
@@ -1462,7 +1474,7 @@ Become self-sufficient.
 	
 </section>
 
-  <section class="about sec-pad">
+<section class="about sec-pad">
     <div class="main-container">
       <h2 id="third-section-anchor" class="heading heading-sec">
         <span class="heading-sec__main">Services We Offer</span>
@@ -1567,6 +1579,7 @@ Become self-sufficient.
 
     </div>
   </section>
+ 
 
   <section class="about sec-pad">
     <div class="main-container">
@@ -1755,17 +1768,7 @@ Become self-sufficient.
 
         <div class="projects__row">
           <div class="projects__row-img-cont">
-            <iframe
-            width="560"
-            height="315"
-            loading="lazy"
-            src="https://www.youtube.com/embed/Y8Wp3dafaMQ"
-            srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/Y8Wp3dafaMQ?autoplay=1><img src=./assets/webp/shopify-demo-galaxy-box-subtitle-progressbar-poster_macbookgrey_front.webp alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            title="The Dark Knight Rises: What Went Wrong? – Wisecrack Edition">
-            </iframe>
+            <lite-youtube videoid="g7FAgtm_nsw" params="controls=0" style="background-image: url(&quot;./assets/webp/shopify-demo-galaxy-box-subtitle-progressbar-poster_macbookgrey_front.webp&quot;);"><button type="button" class="lty-playbtn"><span class="lyt-visually-hidden">Play</span></button></lite-youtube>
           </div>
           <div class="projects__row-content">
             <h3 class="projects__row-content-title">Galaxy Box</h3>
@@ -1778,17 +1781,7 @@ Become self-sufficient.
 
         <div class="projects__row">
           <div class="projects__row-img-cont">
-            <iframe
-            width="560"
-            height="315"
-            loading="lazy"
-            src="https://www.youtube.com/embed/Y8Wp3dafaMQ"
-            srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/Y8Wp3dafaMQ?autoplay=1><img src=./assets/webp/shopify-demo-slate-coffee-subtitle-progressbar-poster_macbookgrey_front.webp alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            title="The Dark Knight Rises: What Went Wrong? – Wisecrack Edition">
-            </iframe>
+            <lite-youtube videoid="F6Vq5wLHoBM" params="controls=0" style="background-image: url(&quot;./assets/webp/shopify-demo-slate-coffee-subtitle-progressbar-poster_macbookgrey_front.webp&quot;);"><button type="button" class="lty-playbtn"><span class="lyt-visually-hidden">Play</span></button></lite-youtube>
           </div>
           <div class="projects__row-content">
             <h3 class="projects__row-content-title">Slate Coffee</h3>
@@ -1801,17 +1794,7 @@ Become self-sufficient.
 
         <div class="projects__row">
           <div class="projects__row-img-cont">
-            <iframe
-            width="560"
-            height="315"
-            loading="lazy"
-            src="https://www.youtube.com/embed/Y8Wp3dafaMQ"
-            srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/Y8Wp3dafaMQ?autoplay=1><img src=./assets/webp/shopify-demo-immortal-hype-subtitle-progressbar-poster_macbookgrey_front.webp alt='Video The Dark Knight Rises: What Went Wrong? – Wisecrack Edition'><span>▶</span></a>"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-            title="The Dark Knight Rises: What Went Wrong? – Wisecrack Edition">
-            </iframe>
+            <lite-youtube videoid="eeP1g97foGY" params="controls=0" style="background-image: url(&quot;./assets/webp/shopify-demo-immortal-hype-subtitle-progressbar-poster_macbookgrey_front.webp&quot;);"><button type="button" class="lty-playbtn"><span class="lyt-visually-hidden">Play</span></button></lite-youtube>
           </div>
           <div class="projects__row-content">
             <h3 class="projects__row-content-title">Immortal Hype</h3>
