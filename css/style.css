@@ -1621,9 +1621,12 @@ ol li::before {
 }
 
 .projects__row {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-gap: 5rem;
   margin-bottom: 11rem;
 }
+
 
 @media only screen and (max-width: 56.25em) {
   .projects__row {
@@ -1685,7 +1688,20 @@ ol li::before {
   margin-bottom: 3rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .projects__row {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+   }
+
+   .projects__row-content {
+
+  align-items: center;
+}
+}
+
 @media only screen and (max-width: 37.5em) {
+  /*600px*/
   .projects__row-content-desc {
     font-size: 1.7rem;
   }
