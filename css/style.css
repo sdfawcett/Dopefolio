@@ -1564,9 +1564,18 @@ ol li::before {
   color:#333;
 }
 
+.responsive {
+  width:100%;
+  height:auto;
+}
+
 .about__content-main {
   margin-top: 10rem;
   width:40%;
+}
+
+.about__content-main.mobile {
+  display: none;
 }
 
 .about__content-skills {
@@ -1599,6 +1608,17 @@ ol li::before {
     font-size: 1.8rem;
     margin: 5rem 0 3rem 0;
     
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  /*600px*/
+  .about__content-main.desktop {
+    display: none;
+  }
+
+  .about__content-main.mobile {
+    display: block;
   }
 }
 
