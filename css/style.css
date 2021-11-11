@@ -1346,9 +1346,6 @@ h5 {
   }
 }
 
-
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
-
 ol {
   list-style: none;
   counter-reset: my-awesome-counter;
@@ -1371,6 +1368,7 @@ ol li::before {
   font-size: 4rem;
   margin-right: 0.5rem;
   line-height: 1;
+  font-family: 'Abril Fatface', serif;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -3156,3 +3154,14 @@ footer hr {
     top: 27px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
