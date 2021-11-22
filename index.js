@@ -23,13 +23,48 @@ var observer = new IntersectionObserver(function(entries) {
   });
 }, { threshold: [0] });
 
-observer.observe(document.querySelector("#first-element"));
-observer.observe(document.querySelector("#second-element"));
-observer.observe(document.querySelector("#third-element"));
-observer.observe(document.querySelector("#fourth-element"));
-//observer.observe(document.querySelector("#fifth-element"));
-observer.observe(document.querySelector("#sixth-element"));
-observer.observe(document.querySelector("#seventh-element"));
+observer.observe(document.querySelector("#element1"));
+observer.observe(document.querySelector("#element2"));
+observer.observe(document.querySelector("#element3"));
+observer.observe(document.querySelector("#element4"));
+observer.observe(document.querySelector("#element5"));
+observer.observe(document.querySelector("#element6"));
+observer.observe(document.querySelector("#element7"));
+observer.observe(document.querySelector("#element8"));
+observer.observe(document.querySelector("#element9"));
+observer.observe(document.querySelector("#element10"));
+observer.observe(document.querySelector("#element11"));
+observer.observe(document.querySelector("#element12"));
+observer.observe(document.querySelector("#element13"));
+observer.observe(document.querySelector("#element14"));
+observer.observe(document.querySelector("#element15"));
+observer.observe(document.querySelector("#element16"));
+observer.observe(document.querySelector("#element17"));
+observer.observe(document.querySelector("#element18"));
+observer.observe(document.querySelector("#element19"));
+observer.observe(document.querySelector("#element20"));
+observer.observe(document.querySelector("#element21"));
+observer.observe(document.querySelector("#element22"));
+observer.observe(document.querySelector("#element23"));
+observer.observe(document.querySelector("#element24"));
+observer.observe(document.querySelector("#element25"));
+observer.observe(document.querySelector("#element26"));
+observer.observe(document.querySelector("#element27"));
+observer.observe(document.querySelector("#element28"));
+observer.observe(document.querySelector("#element29"));
+observer.observe(document.querySelector("#element30"));
+observer.observe(document.querySelector("#element31"));
+observer.observe(document.querySelector("#element32"));
+observer.observe(document.querySelector("#element33"));
+observer.observe(document.querySelector("#element34"));
+observer.observe(document.querySelector("#element35"));
+observer.observe(document.querySelector("#element36"));
+observer.observe(document.querySelector("#element37"));
+observer.observe(document.querySelector("#element38"));
+observer.observe(document.querySelector("#element39"));
+observer.observe(document.querySelector("#element40"));
+observer.observe(document.querySelector("#element41"));
+
 
 // ---
 const hamMenuBtn = document.querySelector('.header__main-ham-menu-cont')
