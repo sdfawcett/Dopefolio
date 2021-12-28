@@ -10,6 +10,8 @@ window.addEventListener("load", function () {
 document.querySelector('#copyright-year').innerText = new Date().getFullYear();
 
 
+/*
+
 var observer = new IntersectionObserver(function(entries) {
   entries.forEach(e =>{
       let element = e.target;
@@ -64,6 +66,8 @@ observer.observe(document.querySelector("#element38"));
 observer.observe(document.querySelector("#element39"));
 observer.observe(document.querySelector("#element40"));
 observer.observe(document.querySelector("#element41"));
+
+*/
 
 
 // ---
