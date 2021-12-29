@@ -2,617 +2,676 @@
 <html lang="en" class="no-js">
 
 <head>
-  <style>html{visibility: hidden;opacity:0;}</style>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>eCommerce Shopify Development | Mindful Web Partnership, LLC</title>
-  <meta name="description" content="eCommerce experiences on Shopify" />
-  <meta name="referrer" content="origin">
+    <style>
+        html {
+            visibility: hidden;
+            opacity: 0;
+        }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>eCommerce Shopify Development | Mindful Web Partnership, LLC</title>
+    <meta name="description" content="eCommerce experiences on Shopify" />
+    <meta name="referrer" content="origin">
 
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
-  <script>
-  document.documentElement.classList.remove("no-js");
-  </script>
+    <script>
+        document.documentElement.classList.remove("no-js");
+    </script>
 
-  <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="styles.css"></noscript>
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="styles.css"></noscript>
 
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <style>
-    *, *::after, *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-  font-family: inherit;
-}
 
-@font-face {
-  font-family: "Montserrat";
-  src: local('Montserrat'), local('Montserrat'), url('assets/fonts/montserrat-medium-webfont.woff') format('woff');
-  font-display: swap;
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+        *,
+        *::after,
+        *::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+            font-family: inherit;
+        }
 
-@font-face {
-  font-family: "Abril Fatface";
-  src: local('Abril Fatface'), local('Abril Fatface'), url('assets/fonts/abrilfatface-regular-webfont.woff') format('woff');
-  font-display: swap;
-}
+        @font-face {
+            font-family: "Montserrat";
+            src: local('Montserrat'), local('Montserrat'), url('assets/fonts/montserrat-medium-webfont.woff') format('woff');
+            font-display: swap;
+        }
 
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
+        @font-face {
+            font-family: "Abril Fatface";
+            src: local('Abril Fatface'), local('Abril Fatface'), url('assets/fonts/abrilfatface-regular-webfont.woff') format('woff');
+            font-display: swap;
+        }
 
-body {
-  box-sizing: border-box;
-  position: relative;
-  line-height: 1.5;
-  font-family: sans-serif;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  color: #333;
-  font-family: "Montserrat", sans-serif;
-}
-  </style>
+        html {
+            font-size: 62.5%;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            box-sizing: border-box;
+            position: relative;
+            line-height: 1.5;
+            font-family: sans-serif;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            color: #333;
+            font-family: "Montserrat", sans-serif;
+        }
+    </style>
 </head>
 
 <body>
 
-  <header class="header">
-    <div class="header__content">
-      <div class="header__logo-container">
-        <div class="header__logo-img-cont">
-          <img id="logo" src="./assets/png/mwp-logo-only-white.png" alt="Mindful Web Partnership, LLC Logo Image"
-            class="header__logo-img" />
-        </div>
-        <h1><span class="header__logo-sub">Mindful</span> Web Partnership</h1>
-      </div>
-      <div class="header__main">
-        <ul class="header__links">
-          <li class="header__link-wrapper">
-            <a href="#third-section-anchor" class="header__link effect-underline">Services</a>
-          </li>
-          <li class="header__link-wrapper">
-            <a href="#first-section-anchor" class="header__link effect-underline">Our Process</a>
-          </li>
-          <li class="header__link-wrapper">
-            <a href="#fifth-section-anchor" class="header__link effect-underline">Our Work</a>
-          </li>
-          <li class="header__link-wrapper">
-            <a href="#fourth-section-anchor" class="header__link effect-underline">FAQ</a>
-          </li>
-          <li class="header__link-wrapper">
-            <a href="#sixth-section-anchor" class="header__link-btn">Contact</a>
-          </li>
-
-        </ul>
-        <div class="header__main-ham-menu-cont">
-          <img id="burger" src="./assets/png/icon-hamburger-white-24x24.png" height="24" width="24" alt="hamburger menu"
-            class="header__main-ham-menu" />
-          <img id="burger-close" src="./assets/png/close-white-24x24.png" height="24" width="24"
-            alt="hamburger menu close" class="header__main-ham-menu-close d-none" />
-        </div>
-      </div>
-    </div>
-    <div class="header__sm-menu">
-      <div class="header__sm-menu-content">
-        <ul class="header__sm-menu-links">
-          <li class="header__sm-menu-link">
-            <a href="#third-section-anchor">Services</a>
-          </li>
-
-          <li class="header__sm-menu-link">
-            <a href="#first-section-anchor">Our Process</a>
-          </li>
-
-          <li class="header__sm-menu-link">
-            <a href="#fifth-section-anchor">Our Work</a>
-          </li>
-
-          <li class="header__sm-menu-link">
-            <a href="#fourth-section-anchor">FAQ</a>
-          </li>
-
-          <li class="header__sm-menu-link">
-            <a href="#sixth-section-anchor">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </header>
-  <section class="home-hero sec-pad">
-    <div class="home-hero__content-l fade-in">
-
-
-
-      <h1 class="heading-primary">eCommerce <span class="mindful-green effect-shine">experiences,</span> not just online
-        stores</h1>
-      <div class="home-hero__info">
-        <p class="text-primary">
-          We specialize in optimized, conversion-focused Shopify storefronts that incorporate time-tested user
-          experience
-          principles.
-        </p>
-        <p class="text-primary">
-          Our solutions turn site visitors into customers.
-        </p>
-
-        <div class="home-hero__cta">
-          <a href="./#sixth-section-anchor" class="btn btn--bg">Get Started</a>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="home-hero__content-r fade-in">
-
-      <lite-youtube videoid="kEpVX2wQT7M" params="controls=1" style="background-image: url(&quot;./assets/webp/mwp-cta-poster-image.webp&quot;);"><button type="button" class="lty-playbtn"><span class="lyt-visually-hidden">Play</span></button></lite-youtube>
-    </div>
-
-  </section>
-
-  <section class="about sec-pad">
-    <div class="main-container">
-      <h2 id="first-section-anchor" class="heading heading-sec">
-        <span class="heading-sec__main">What We Do</span>
-      </h2>
-      <div class="about__content">
-
-        <div class="about__content-skills">
-          <h3 id="element1" class="about__content-title">We help clients build eCommerce <span
-              class="mindful-green">experiences</span> on Shopify.
-          </h3>
-
-          <div class="uvp-list">
-            <ul>
-              <li id="element2">We can help you create an eCommerce store or scale up</li>
-              <li id="element3">We build your eCommerce store based on what resonates with your audience</li>
-              <li id="element4">We offer 20 years of experience building web solutions</li>
-              <li id="element5">We find the opportunities that make sense for your brand</li>
-            </ul>
-          </div>
-
-        </div>
-
-        <div id="element6" class="about__content-main">
-
-          <lottie-player src="./assets/json/lf20_bay0b2ga.json" background="transparent" speed="1"
-            style="width: 100%; height: 100%;" loop autoplay></lottie-player>
-
-        </div>
-
-      </div>
-    </div>
-
-
-
-  </section>
-
-  <section class="about sec-pad">
-    <div class="main-container">
-      <h2 id="second-section-anchor" class="heading heading-sec">
-        <span class="heading-sec__main">How We Do It</span>
-      </h2>
-      <div class="about__content">
-
-        <div class="about__content-skills">
-          <h3 id="element7" class="about__content-title">Every one of our Shopify build projects has the same four milestones:</h3>
-
-          <div>
-            <ol>
-              <li id="element8">During the kickoff call we'll go over the project structure and important documents. We'll also talk
-                about your new store's technical specifications.</li>
-              <li id="element9">For the second project milestone we take a tour of the new store's admin dashboard. And we cover any
-                additional apps or functionality.</li>
-              <li id="element10">The third project milestone is a tour of the new store's front end shopping experience. We'll also do
-                some simple theme edit training.</li>
-              <li id="element11">The last project milestone is launch, where we'll hand over the keys to your new Shopify store. We'll
-                also resolve open questions, carry out a test order, and talk about any next steps. </li>
-            </ol>
-          </div>
-
-        </div>
-        <div id="element12" class="about__content-main">
-
-          <lottie-player src="./assets/json/lf20_h8i1v1bi.json" background="transparent" speed="1"
-            style="width: 100%; height: 100%;" loop autoplay></lottie-player>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="ctaBlock ctaBlock--alt2">
-
-	<div class="ctaBlock-inner">
-
-    <div class="home-hero__content-l2">
-    
-    <h1 id="element13" class="heading-primary">Make Your eCommerce idea happen with Shopify</h1>
-
-        <p id="element14" class="text-primary w-piping">
-          Store Setups <span class="black">|</span> Migrations <span class="black">|</span> Theme
-          Development <span class="black">|</span> Integrations
-        </p>
-    
-    </div>
-
-    <div class="home-hero__content-r2">
-      <p id="element15" class="text-primary">
-Finish your Shopify project faster. 
-        </p>
-        <p id="element16" class="text-primary">
-Get value from day one. 
-        </p>
-        <p id="element17" class="text-primary">
-Become self-sufficient.
-        </p>
-
-        <div id="element18" class="home-hero__cta">
-          <a href="./#sixth-section-anchor" class="btn btn--bg">I'm Ready</a>
-        </div>
-    </div>
-		
-	</div>
-	
-</section>
-
-<section class="about sec-pad">
-    <div class="main-container">
-      <h2 id="third-section-anchor" class="heading heading-sec">
-        <span class="heading-sec__main">Services We Offer</span>
-      </h2>
-
-        <section class="card-grid">
-          <ul class="cards">
-            <li class="cards__item">
-              <div class="card">
-                <div class="card__image card__image--fence"></div>
-                <div class="card__content">
-                  <div class="card__title">Flex</div>
-                  <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
-                  <button class="btn btn--block card__btn">get a quote</button>
+    <header class="header">
+        <div class="header__content">
+            <div class="header__logo-container">
+                <div class="header__logo-img-cont">
+                    <img id="logo" src="./assets/png/mwp-logo-only-white.png"
+                        alt="Mindful Web Partnership, LLC Logo Image" class="header__logo-img" />
                 </div>
-              </div>
-            </li>
-            <li class="cards__item">
-              <div class="card">
-                <div class="card__image card__image--river"></div>
-                <div class="card__content">
-                  <div class="card__title">Flex Grow</div>
-                  <p class="card__text">This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.</p>
-                  <button class="btn btn--block card__btn">get a quote</button>
+                <h1><span class="header__logo-sub">Mindful</span> Web Partnership</h1>
+            </div>
+            <div class="header__main">
+                <ul class="header__links">
+                    <li class="header__link-wrapper">
+                        <a href="#third-section-anchor" class="header__link effect-underline">Services</a>
+                    </li>
+                    <li class="header__link-wrapper">
+                        <a href="#first-section-anchor" class="header__link effect-underline">Our Process</a>
+                    </li>
+                    <li class="header__link-wrapper">
+                        <a href="#fifth-section-anchor" class="header__link effect-underline">Our Work</a>
+                    </li>
+                    <li class="header__link-wrapper">
+                        <a href="#fourth-section-anchor" class="header__link effect-underline">FAQ</a>
+                    </li>
+                    <li class="header__link-wrapper">
+                        <a href="#sixth-section-anchor" class="header__link-btn">Contact</a>
+                    </li>
+
+                </ul>
+                <div class="header__main-ham-menu-cont">
+                    <img id="burger" src="./assets/png/icon-hamburger-white-24x24.png" height="24" width="24"
+                        alt="hamburger menu" class="header__main-ham-menu" />
+                    <img id="burger-close" src="./assets/png/close-white-24x24.png" height="24" width="24"
+                        alt="hamburger menu close" class="header__main-ham-menu-close d-none" />
                 </div>
-              </div>
-            </li>
-            <li class="cards__item">
-              <div class="card">
-                <div class="card__image card__image--record"></div>
-                <div class="card__content">
-                  <div class="card__title">Flex Shrink</div>
-                  <p class="card__text">This defines the ability for a flex item to shrink if necessary. Negative numbers are invalid.</p>
-                  <button class="btn btn--block card__btn">get a quote</button>
+            </div>
+        </div>
+        <div class="header__sm-menu">
+            <div class="header__sm-menu-content">
+                <ul class="header__sm-menu-links">
+                    <li class="header__sm-menu-link">
+                        <a href="#third-section-anchor">Services</a>
+                    </li>
+
+                    <li class="header__sm-menu-link">
+                        <a href="#first-section-anchor">Our Process</a>
+                    </li>
+
+                    <li class="header__sm-menu-link">
+                        <a href="#fifth-section-anchor">Our Work</a>
+                    </li>
+
+                    <li class="header__sm-menu-link">
+                        <a href="#fourth-section-anchor">FAQ</a>
+                    </li>
+
+                    <li class="header__sm-menu-link">
+                        <a href="#sixth-section-anchor">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="home-hero sec-pad">
+        <div class="home-hero__content-l fade-in">
+
+
+
+            <h1 class="heading-primary">eCommerce <span class="mindful-green effect-shine">experiences,</span> not just
+                online
+                stores</h1>
+            <div class="home-hero__info">
+                <p class="text-primary">
+                    We specialize in optimized, conversion-focused Shopify storefronts that incorporate time-tested user
+                    experience
+                    principles.
+                </p>
+                <p class="text-primary">
+                    Our solutions turn site visitors into customers.
+                </p>
+
+                <div class="home-hero__cta">
+                    <a href="./#sixth-section-anchor" class="btn btn--bg">Get Started</a>
                 </div>
-              </div>
-            </li>
-            <li class="cards__item">
-              <div class="card">
-                <div class="card__image card__image--flowers"></div>
-                <div class="card__content">
-                  <div class="card__title">Flex Basis</div>
-                  <p class="card__text">This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means "look at my width or height property."</p>
-                  <button class="btn btn--block card__btn">get a quote</button>
+            </div>
+
+        </div>
+
+        <div class="home-hero__content-r fade-in">
+
+            <lite-youtube videoid="kEpVX2wQT7M" params="controls=1"
+                style="background-image: url(&quot;./assets/webp/mwp-cta-poster-image.webp&quot;);"><button
+                    type="button" class="lty-playbtn"><span class="lyt-visually-hidden">Play</span></button>
+            </lite-youtube>
+        </div>
+
+    </section>
+
+    <section class="about sec-pad">
+        <div class="main-container">
+            <h2 id="first-section-anchor" class="heading heading-sec">
+                <span class="heading-sec__main">What We Do</span>
+            </h2>
+            <div class="about__content">
+
+                <div class="about__content-skills">
+                    <h3 id="element1" class="about__content-title">We help clients build eCommerce <span
+                            class="mindful-green">experiences</span> on Shopify.
+                    </h3>
+
+                    <div class="uvp-list">
+                        <ul>
+                            <li id="element2">We can help you create an eCommerce store or scale up</li>
+                            <li id="element3">We build your eCommerce store based on what resonates with your audience
+                            </li>
+                            <li id="element4">We offer 20 years of experience building web solutions</li>
+                            <li id="element5">We find the opportunities that make sense for your brand</li>
+                        </ul>
+                    </div>
+
                 </div>
-              </div>
-            </li>
-            <li class="cards__item">
-              <div class="card">
-                <div class="card__image card__image--flowers"></div>
-                <div class="card__content">
-                  <div class="card__title">Flex Basis</div>
-                  <p class="card__text">This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means "look at my width or height property."</p>
-                  <button class="btn btn--block card__btn">get a quote</button>
+
+                <div id="element6" class="about__content-main">
+
+                    <lottie-player src="./assets/json/lf20_bay0b2ga.json" background="transparent" speed="1"
+                        style="width: 100%; height: 100%;" loop autoplay></lottie-player>
+
                 </div>
-              </div>
-            </li>
-            <li class="cards__item">
-              <div class="card">
-                <div class="card__image card__image--flowers"></div>
-                <div class="card__content">
-                  <div class="card__title">Flex Basis</div>
-                  <p class="card__text">This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means "look at my width or height property."</p>
-                  <button class="btn btn--block card__btn">get a quote</button>
+
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <section class="about sec-pad">
+        <div class="main-container">
+            <h2 id="second-section-anchor" class="heading heading-sec">
+                <span class="heading-sec__main">How We Do It</span>
+            </h2>
+            <div class="about__content">
+
+                <div class="about__content-skills">
+                    <h3 id="element7" class="about__content-title">Every one of our Shopify build projects has the same
+                        four milestones:</h3>
+
+                    <div>
+                        <ol>
+                            <li id="element8">During the kickoff call we'll go over the project structure and important
+                                documents. We'll also talk
+                                about your new store's technical specifications.</li>
+                            <li id="element9">For the second project milestone we take a tour of the new store's admin
+                                dashboard. And we cover any
+                                additional apps or functionality.</li>
+                            <li id="element10">The third project milestone is a tour of the new store's front end
+                                shopping experience. We'll also do
+                                some simple theme edit training.</li>
+                            <li id="element11">The last project milestone is launch, where we'll hand over the keys to
+                                your new Shopify store. We'll
+                                also resolve open questions, carry out a test order, and talk about any next steps.
+                            </li>
+                        </ol>
+                    </div>
+
                 </div>
-              </div>
-            </li>
-          </ul>
-      </section>
+                <div id="element12" class="about__content-main">
 
+                    <lottie-player src="./assets/json/lf20_h8i1v1bi.json" background="transparent" speed="1"
+                        style="width: 100%; height: 100%;" loop autoplay></lottie-player>
 
-    </div>
-  </section>
- 
-
-  <section class="about sec-pad">
-    <div class="main-container">
-      <h2 id="fourth-section-anchor" class="heading heading-sec">
-        <span class="heading-sec__main">FAQ</span>
-      </h2>
-      <div>
-
-      <div id="faq-tabs" class="tabs">
-
-      <div id="element27" class="tab">
-        <input type="checkbox" id="chck1">
-        <label class="tab-label" for="chck1">What type of projects do you take on?</label>
-        <div class="tab-content">
-          We do eCommerce projects primarily on the Shopify platform &#8212; things like theme customizations, store
-          setups, platform migrations, store and sales-funnel optimizations, Shopify 2.0 upgrades, app integrations,
-          and various types of training.
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div id="element28" class="tab">
-        <input type="checkbox" id="chck2">
-        <label class="tab-label" for="chck2">What’s so good about Shopify?</label>
-        <div class="tab-content">
-          COVID-19 is pushing many more businesses online, and we think the Shopify platform has the most momentum and
-          long-term potential. It’s an accessible, robust eCommerce platform that offers a lot of features
-          out-of-the-box. It removes so much complexity for end-users, while offering powerful features to developers
-          who build Shopify solutions.<br><br>
-          Now that Google Shopping is funneling more users to Shopify stores than ever before, there couldn't be a
-          better time to invest in a new Shopify store.
-        </div>
-      </div>
+    <section class="ctaBlock ctaBlock--alt2">
 
-      <div id="element29" class="tab">
-        <input type="checkbox" id="chck3">
-        <label class="tab-label" for="chck3">What is Shopify 2.0?</label>
-        <div class="tab-content">
-          Shopify is already a top-notch platform, and they’re making it even better with Shopify 2.0. The most
-          exciting changes for clients are all the new ways to customize your online store (with or without code).
-          Things like sections on every page, app blocks, support for dynamic content sources, and collection
-          filtering open up a lot of new possibilities for online store owners.<br><br>
+        <div class="ctaBlock-inner">
 
-          Also the new theme architecture means it’s easier for Mindful to make your Shopify store blazing fast so you
-          get the best possible performance.
-        </div>
-      </div>
+            <div class="home-hero__content-l2">
 
-      <div id="element30" class="tab">
-        <input type="checkbox" id="chck4">
-        <label class="tab-label" for="chck4">Shopify makes eCommerce seem easy. Can’t I just build and maintain a store myself?</label>
-        <div class="tab-content">
-          Some clients just want someone to do their store setup so they can take it and run with it &#8212; we're
-          happy to do that. Down the road, if you get stuck and need help we can do that too.<br><br>
+                <h1 id="element13" class="heading-primary">Make Your eCommerce idea happen with Shopify</h1>
 
-          For anyone interested in building a more complex eCommerce solution, the more important question is “do you
-          have the time and patience to learn how to build and maintain it”? If you don’t have that kind of time to
-          spend, and you want to get the most out of your store from day one, Mindful can help.
-        </div>
-      </div>
+                <p id="element14" class="text-primary w-piping">
+                    Store Setups <span class="black">|</span> Migrations <span class="black">|</span> Theme
+                    Development <span class="black">|</span> Integrations
+                </p>
 
-      <div id="element31" class="tab">
-        <input type="checkbox" id="chck5">
-        <label class="tab-label" for="chck5">How do you charge for projects?</label>
-        <div class="tab-content">
-          We provide flat-rate quotes for our store design and development packages, so you'll know exactly what your
-          investment will be from the start.
-        </div>
-      </div>
-
-      <div id="element32" class="tab">
-        <input type="checkbox" id="chck6">
-        <label class="tab-label" for="chck6">I already have a Shopify store. Can Mindful help me make it better?</label>
-        <div class="tab-content">
-          We can definitely help you with your existing Shopify store. We'll consult with you to determine your goals
-          and preferences, create design mockups or prototypes if necessary, and execute your vision for your store.
-        </div>
-      </div>
-
-      </div>
-
-      </div>
-    </div>
-
-  </section>
-
-  <section class="about sec-pad">
-    <div class="main-container">
-      <h2 id="fifth-section-anchor" class="heading heading-sec heading-sec__mb-bg">
-        <span class="heading-sec__main">Online Stores</span>
-        <span class="heading-sec__sub">
-          Take a look at some of our recent Shopify work.
-        </span>
-      </h2>
-
-      
-  <section class="card-grid">
-      <ul class="cards">
-        <li class="cards__item">
-          <div class="card">
-            <div class="projects__row-img-cont">
-              <lite-youtube videoid="g7FAgtm_nsw" params="controls=1" style="background-image: url(&quot;./assets/webp/galaxy-box-home.webp&quot;);"><button type="button" class="lty-playbtn"><span class="lyt-visually-hidden">Play</span></button></lite-youtube>
             </div>
-            <div class="card__content">
-              <div class="card__title">Flex</div>
-              <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
-              <button class="btn btn--block card__btn">Project Page</button>
-            </div>
-          </div>
-        </li>
-        <li class="cards__item">
-          <div class="card">
-            <div class="projects__row-img-cont">
-              <lite-youtube videoid="F6Vq5wLHoBM" params="controls=1" style="background-image: url(&quot;./assets/webp/slate-coffee-home.webp&quot;);"><button type="button" class="lty-playbtn"><span class="lyt-visually-hidden">Play</span></button></lite-youtube>
-            </div>
-            <div class="card__content">
-              <div class="card__title">Flex Grow</div>
-              <p class="card__text">This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.</p>
-              <button class="btn btn--block card__btn">Project Page</button>
-            </div>
-          </div>
-        </li>
-        <li class="cards__item">
-          <div class="card">
-            <div class="projects__row-img-cont">
-              <lite-youtube videoid="eeP1g97foGY" params="controls=1" style="background-image: url(&quot;./assets/webp/immortal-hype-home.webp&quot;);"><button type="button" class="lty-playbtn"><span class="lyt-visually-hidden">Play</span></button></lite-youtube>
-            </div>
-            <div class="card__content">
-              <div class="card__title">Flex Shrink</div>
-              <p class="card__text">This defines the ability for a flex item to shrink if necessary. Negative numbers are invalid.</p>
-              <button class="btn btn--block card__btn">Project Page</button>
-            </div>
-          </div>
-        </li>
 
-        <li class="cards__item">
-          <div class="card">
-            <div class="projects__row-img-cont">
-              <lite-youtube videoid="g7FAgtm_nsw" params="controls=1" style="background-image: url(&quot;./assets/webp/galaxy-box-home.webp&quot;);"><button type="button" class="lty-playbtn"><span class="lyt-visually-hidden">Play</span></button></lite-youtube>
-            </div>
-            <div class="card__content">
-              <div class="card__title">Flex</div>
-              <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
-              <button class="btn btn--block card__btn">Project Page</button>
-            </div>
-          </div>
-        </li>
-        <li class="cards__item">
-          <div class="card">
-            <div class="projects__row-img-cont">
-              <lite-youtube videoid="F6Vq5wLHoBM" params="controls=1" style="background-image: url(&quot;./assets/webp/slate-coffee-home.webp&quot;);"><button type="button" class="lty-playbtn"><span class="lyt-visually-hidden">Play</span></button></lite-youtube>
-            </div>
-            <div class="card__content">
-              <div class="card__title">Flex Grow</div>
-              <p class="card__text">This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.</p>
-              <button class="btn btn--block card__btn">Project Page</button>
-            </div>
-          </div>
-        </li>
-        <li class="cards__item">
-          <div class="card">
-            <div class="projects__row-img-cont">
-              <lite-youtube videoid="eeP1g97foGY" params="controls=1" style="background-image: url(&quot;./assets/webp/immortal-hype-home.webp&quot;);"><button type="button" class="lty-playbtn"><span class="lyt-visually-hidden">Play</span></button></lite-youtube>
-            </div>
-            <div class="card__content">
-              <div class="card__title">Flex Shrink</div>
-              <p class="card__text">This defines the ability for a flex item to shrink if necessary. Negative numbers are invalid.</p>
-              <button class="btn btn--block card__btn">Project Page</button>
-            </div>
-          </div>
-        </li>
+            <div class="home-hero__content-r2">
+                <p id="element15" class="text-primary">
+                    Finish your Shopify project faster.
+                </p>
+                <p id="element16" class="text-primary">
+                    Get value from day one.
+                </p>
+                <p id="element17" class="text-primary">
+                    Become self-sufficient.
+                </p>
 
-
-
-        <!--
-        <li class="cards__item">
-          <div class="card">
-            <div class="card__image card__image--flowers"></div>
-            <div class="card__content">
-              <div class="card__title">Flex Basis</div>
-              <p class="card__text">This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means "look at my width or height property."</p>
-              <button class="btn btn--block card__btn">Button</button>
+                <div id="element18" class="home-hero__cta">
+                    <a href="./#sixth-section-anchor" class="btn btn--bg">I'm Ready</a>
+                </div>
             </div>
-          </div>
-        </li>
-        -->
-      </ul>
-      </section>
-
-
-
-    </div>
-  </section>
-  <section class="contact sec-pad">
-    <div class="main-container">
-      <h2 id="sixth-section-anchor" class="heading heading-sec heading-sec__mb-med">
-        <span class="heading-sec__main heading-sec__main--lt">Contact</span>
-        <span class="heading-sec__sub heading-sec__sub--lt">
-          Even if you're not quite ready to start a project and just need advice on eCommerce, digital strategy, or UX
-          research and design, we're happy to provide you with our insights and guidance.<br><br>
-          Let's chat to see if Mindful can help you achieve your eCommerce ambitions. Simply <a
-            href="https://calendly.com/mindfulwebpartnership/15min" target="_blank">book a 15-minute call with us</a> or send us an
-          email using the contact form below.
-        </span>
-      </h2>
-      <div id="element41" class="contact__form-container">
-        <form action="POST" data-netlify="true" class="contact__form">
-          <div class="contact__form-field">
-            <label class="contact__form-label" for="name">Name</label>
-            <input required placeholder="Enter Your Name" type="text" class="contact__form-input" name="name"
-              id="name" />
-          </div>
-          <div class="contact__form-field">
-            <label class="contact__form-label" for="email">Email</label>
-            <input required placeholder="Enter Your Email" type="text" class="contact__form-input" name="email"
-              id="email" />
-          </div>
-          <div class="contact__form-field">
-            <label class="contact__form-label" for="message">Message</label>
-            <textarea required cols="30" rows="10" class="contact__form-input" placeholder="Enter Your Message"
-              name="message" id="message"></textarea>
-          </div>
-
-          <button type="submit" class="btn btn--theme contact__btn">
-            Submit
-          </button>
-        </form>
-      </div>
-      <div class="footer">
-      <div class="heading">
-        <div class="header__logo-container">
-        <div class="header__logo-img-cont">
-          <img src="./assets/png/mwp-logo-only-white.png" alt="Mindful Web Partnership, LLC Logo Image" class="header__logo-img">
-        </div>
-        <h1>Mindful Web Partnership</h1>
-      </div>
-      </div>
-      <div class="content">
-        <div class="services">
-          <h4>Services</h4>
-          <p><a href="#third-section-anchor">Design and Development</a></p>
-          <p><a href="#third-section-anchor">Store Migrations</a></p>
-          <p><a href="#third-section-anchor">Growth Assistance &amp; Support</a></p>
-          <p><a href="#third-section-anchor">Existing Store Improvements</a></p>
-        </div>
-       
-        <div class="links">
-          <h4>Quick links</h4>
-          <p><a href="#third-section-anchor">Services</a></p>
-          <p><a href="#first-section-anchor">Our Process</a></p>
-          <p><a href="#fifth-section-anchor">Our Work</a></p>
-          <p><a href="#fourth-section-anchor">FAQ</a></p>
 
         </div>
-        <div class="details">
-          <h4 class="mobile">Get In Touch</h4>
-          <p><a href="https://calendly.com/mindfulwebpartnership/15min" target="_blank">📞 Schedule A Call</a></p>
-          <p><a href="#sixth-section-anchor">📧 Email Us</a></p>
-          
+
+    </section>
+
+    <section class="about sec-pad">
+        <div class="main-container">
+            <h2 id="third-section-anchor" class="heading heading-sec">
+                <span class="heading-sec__main">Services We Offer</span>
+            </h2>
+
+            <div class="desktop">
+                <div class="example-equal-height">
+                    <div id="element19" class="example-equal-height-card">
+                        <div class="example-equal-height-figure"><img class="lazy"
+                                data-src="./assets/png/icon-code-green.png"></div>
+                        <div class="example-equal-height-caption">
+                            <h5>Shopify Website Design and Development</h5>
+                            <!--<p>We know what works and what doesn't work in eCommerce. Our website designs aren't just beautiful—they turn visitors into customers.</p>-->
+                            <p>We provide flat-rate quotes for our full design &#38; development packages, so you know
+                                exactly what
+                                investment you'll be putting into the project before you start.</p>
+                            <a href="#sixth-section-anchor">Get a quote</a>
+                        </div>
+                    </div>
+                    <div id="element20" class="example-equal-height-card">
+                        <div class="example-equal-height-figure"><img class="lazy"
+                                data-src="./assets/png/icon-migrate-green.png"></div>
+                        <div class="example-equal-height-caption">
+                            <h5>eCommerce Store Migrations</h5>
+                            <!--<p>Replatforming can be a scary and challenging endeavor. We'll help you throughout the entire process to make it a smooth experience that will ultimately help your business grow.</p>-->
+                            <p>Our store migrations include website design and development as well as moving your
+                                existing product data,
+                                customer data, and order history to Shopify.</p>
+                            <a href="#sixth-section-anchor">Get a quote</a>
+                        </div>
+                    </div>
+
+
+                    <div id="element21" class="example-equal-height-card">
+                        <div class="example-equal-height-figure"><img class="lazy"
+                                data-src="./assets/png/icon-optimize-green.png"></div>
+                        <div class="example-equal-height-caption">
+                            <h5>Growth Assistance &#38; Support</h5>
+                            <!--<p>Our monthly growth and support package is meant to provide you with all of the ongoing help and expertise you need to grow your business.</p>-->
+                            <p>Depending on your needs, these plans can include design and development updates, Shopify
+                                2.0 upgrades,
+                                app installations, page speed optimization, and more.</p>
+                            <a href="#sixth-section-anchor">Get a quote</a>
+                        </div>
+                    </div>
+                    <div id="element22" class="example-equal-height-card">
+                        <div class="example-equal-height-figure"><img class="lazy"
+                                data-src="./assets/png/icon-work-on-green.png"></div>
+                        <div class="example-equal-height-caption">
+                            <h5>Updates To Existing Sites</h5>
+                            <p>Looking to make updates to your existing Shopify site? We'll consult with you to
+                                determine your goals and
+                                preferences, create design mockups if necessary, and execute your vision for your site.
+                            </p>
+                            <a href="#sixth-section-anchor">Get a quote</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="mobile">
+                <div class="example-equal-height">
+                    <div id="element23" class="example-equal-height-card">
+                        <div class="example-equal-height-figure"><img class="lazy"
+                                data-src="./assets/png/icon-code-green.png"></div>
+                        <div class="example-equal-height-caption">
+                            <h5>Shopify Website Design and Development</h5>
+                            <!--<p>We know what works and what doesn't work in eCommerce. Our website designs aren't just beautiful—they turn visitors into customers.</p>-->
+                            <p>We provide flat-rate quotes for our full design &#38; development packages, so you know
+                                exactly what
+                                investment you'll be putting into the project before you start.</p>
+                            <a href="#sixth-section-anchor">Get a quote</a>
+                        </div>
+                    </div>
+                    <div id="element24" class="example-equal-height-card">
+                        <div class="example-equal-height-figure"><img class="lazy"
+                                data-src="./assets/png/icon-migrate-green.png"></div>
+                        <div class="example-equal-height-caption">
+                            <h5>eCommerce Store Migrations</h5>
+                            <!--<p>Replatforming can be a scary and challenging endeavor. We'll help you throughout the entire process to make it a smooth experience that will ultimately help your business grow.</p>-->
+                            <p>Our store migrations include website design and development as well as moving your
+                                existing product
+                                data, customer data, and order history to Shopify.</p>
+                            <a href="#sixth-section-anchor">Get a quote</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="example-equal-height">
+                    <div id="element25" class="example-equal-height-card">
+                        <div class="example-equal-height-figure"><img class="lazy"
+                                data-src="./assets/png/icon-optimize-green.png"></div>
+                        <div class="example-equal-height-caption">
+                            <h5>Growth Assistance &#38; Support</h5>
+                            <!--<p>Our monthly growth and support package is meant to provide you with all of the ongoing help and expertise you need to grow your business.</p>-->
+                            <p>Depending on your needs, these plans can include design and development updates, Shopify
+                                2.0 upgrades,
+                                app installations, page speed optimization, and more.</p>
+                            <a href="#sixth-section-anchor">Get a quote</a>
+                        </div>
+                    </div>
+                    <div id="element26" class="example-equal-height-card">
+                        <div class="example-equal-height-figure"><img class="lazy"
+                                data-src="./assets/png/icon-work-on-green.png"></div>
+                        <div class="example-equal-height-caption">
+                            <h5>Updates To Existing Sites</h5>
+                            <p>Looking to make updates to your existing Shopify site? We'll consult with you to
+                                determine your goals
+                                and preferences, create design mockups if necessary, and execute your vision for your
+                                site.</p>
+                            <a href="#sixth-section-anchor">Get a quote</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
         </div>
-      </div>
-      </div>
-      <footer>
-        <p class="tagline">Don't just get an online store for your business &#8212; invest in an eCommerce experience.</p><br>
-        &copy; Copyright <span id="copyright-year">2021</span> Mindful Web Partnership, LLC
-      </footer>
-    </div>
-  </section>
-  
-  <script src="js/modernizr-custom.js"></script>
-  <script src="./index.js"></script>
-  <script defer src="js/lottie-player.js"></script>
-  <style>html{visibility: visible;opacity:1;}</style>
+    </section>
+
+
+    <section class="about sec-pad">
+        <div class="main-container">
+            <h2 id="fourth-section-anchor" class="heading heading-sec">
+                <span class="heading-sec__main">FAQ</span>
+            </h2>
+            <div>
+
+                <div id="faq-tabs" class="tabs">
+
+                    <div id="element27" class="tab">
+                        <input type="checkbox" id="chck1">
+                        <label class="tab-label" for="chck1">What type of projects do you take on?</label>
+                        <div class="tab-content">
+                            We do eCommerce projects primarily on the Shopify platform &#8212; things like theme
+                            customizations, store
+                            setups, platform migrations, store and sales-funnel optimizations, Shopify 2.0 upgrades, app
+                            integrations,
+                            and various types of training.
+                        </div>
+                    </div>
+
+                    <div id="element28" class="tab">
+                        <input type="checkbox" id="chck2">
+                        <label class="tab-label" for="chck2">What’s so good about Shopify?</label>
+                        <div class="tab-content">
+                            COVID-19 is pushing many more businesses online, and we think the Shopify platform has the
+                            most momentum and
+                            long-term potential. It’s an accessible, robust eCommerce platform that offers a lot of
+                            features
+                            out-of-the-box. It removes so much complexity for end-users, while offering powerful
+                            features to developers
+                            who build Shopify solutions.<br><br>
+                            Now that Google Shopping is funneling more users to Shopify stores than ever before, there
+                            couldn't be a
+                            better time to invest in a new Shopify store.
+                        </div>
+                    </div>
+
+                    <div id="element29" class="tab">
+                        <input type="checkbox" id="chck3">
+                        <label class="tab-label" for="chck3">What is Shopify 2.0?</label>
+                        <div class="tab-content">
+                            Shopify is already a top-notch platform, and they’re making it even better with Shopify 2.0.
+                            The most
+                            exciting changes for clients are all the new ways to customize your online store (with or
+                            without code).
+                            Things like sections on every page, app blocks, support for dynamic content sources, and
+                            collection
+                            filtering open up a lot of new possibilities for online store owners.<br><br>
+
+                            Also the new theme architecture means it’s easier for Mindful to make your Shopify store
+                            blazing fast so you
+                            get the best possible performance.
+                        </div>
+                    </div>
+
+                    <div id="element30" class="tab">
+                        <input type="checkbox" id="chck4">
+                        <label class="tab-label" for="chck4">Shopify makes eCommerce seem easy. Can’t I just build and
+                            maintain a store myself?</label>
+                        <div class="tab-content">
+                            Some clients just want someone to do their store setup so they can take it and run with it
+                            &#8212; we're
+                            happy to do that. Down the road, if you get stuck and need help we can do that too.<br><br>
+
+                            For anyone interested in building a more complex eCommerce solution, the more important
+                            question is “do you
+                            have the time and patience to learn how to build and maintain it”? If you don’t have that
+                            kind of time to
+                            spend, and you want to get the most out of your store from day one, Mindful can help.
+                        </div>
+                    </div>
+
+                    <div id="element31" class="tab">
+                        <input type="checkbox" id="chck5">
+                        <label class="tab-label" for="chck5">How do you charge for projects?</label>
+                        <div class="tab-content">
+                            We provide flat-rate quotes for our store design and development packages, so you'll know
+                            exactly what your
+                            investment will be from the start.
+                        </div>
+                    </div>
+
+                    <div id="element32" class="tab">
+                        <input type="checkbox" id="chck6">
+                        <label class="tab-label" for="chck6">I already have a Shopify store. Can Mindful help me make it
+                            better?</label>
+                        <div class="tab-content">
+                            We can definitely help you with your existing Shopify store. We'll consult with you to
+                            determine your goals
+                            and preferences, create design mockups or prototypes if necessary, and execute your vision
+                            for your store.
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="about sec-pad">
+        <div class="main-container">
+            <h2 id="fifth-section-anchor" class="heading heading-sec heading-sec__mb-bg">
+                <span class="heading-sec__main">Online Stores</span>
+                <span class="heading-sec__sub">
+                    Take a look at some of our recent Shopify work.
+                </span>
+            </h2>
+
+            <div class="projects__content">
+
+                <div class="projects__row">
+                    <div class="projects__row-img-cont">
+                        <lite-youtube videoid="g7FAgtm_nsw" params="controls=1"
+                            style="background-image: url(&quot;./assets/webp/shopify-demo-galaxy-box-subtitle-progressbar-poster_macbookgrey_front.webp&quot;);">
+                            <button type="button" class="lty-playbtn"><span
+                                    class="lyt-visually-hidden">Play</span></button></lite-youtube>
+                    </div>
+                    <div class="projects__row-content">
+                        <h3 id="element33" class="projects__row-content-title">Galaxy Box</h3>
+                        <p id="element34" class="projects__row-content-desc">
+                            A Shopify store featuring an electronic device that projects stars and constellations. This
+                            store has a custom video background hero section, custom product page tabs with metafield
+                            support, and a custom affiliate marketing feature that allows store owners to add affiliate
+                            product data to pages dynamically using product tags.
+                        </p>
+                        <!--<a href="./galaxy-box.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Project Info</a>-->
+                    </div>
+                </div>
+
+                <div class="projects__row">
+                    <div id="element35" class="projects__row-img-cont">
+                        <lite-youtube videoid="F6Vq5wLHoBM" params="controls=1"
+                            style="background-image: url(&quot;./assets/webp/shopify-demo-slate-coffee-subtitle-progressbar-poster_macbookgrey_front.webp&quot;);">
+                            <button type="button" class="lty-playbtn"><span
+                                    class="lyt-visually-hidden">Play</span></button></lite-youtube>
+                    </div>
+                    <div class="projects__row-content">
+                        <h3 id="element36" class="projects__row-content-title">Slate Coffee</h3>
+                        <p id="element37" class="projects__row-content-desc">
+                            Built for a coffee brand using the new Shopify 2.0 theme architecture. This store includes
+                            dynamic product template functionality that allows store owners to easily add visual
+                            flavor-rating indicators specific to coffee types.
+                        </p>
+                        <!--<a href="./slate-coffee.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Project Info</a>-->
+                    </div>
+                </div>
+
+                <div class="projects__row">
+                    <div id="element38" class="projects__row-img-cont">
+                        <lite-youtube videoid="eeP1g97foGY" params="controls=1"
+                            style="background-image: url(&quot;./assets/webp/shopify-demo-immortal-hype-subtitle-progressbar-poster_macbookgrey_front.webp&quot;);">
+                            <button type="button" class="lty-playbtn"><span
+                                    class="lyt-visually-hidden">Play</span></button></lite-youtube>
+                    </div>
+                    <div class="projects__row-content">
+                        <h3 id="element39" class="projects__row-content-title">Immortal Hype</h3>
+                        <p id="element40" class="projects__row-content-desc">
+                            Premium Shopify theme with additional custom features for a clothing brand. The store
+                            includes an image-enabled mega menu, custom filtering options, and an interactive hotspot
+                            feature for creating upsell opportunities.
+                        </p>
+                        <!--<a href="./immortal-hype.html" class="btn btn--med btn--theme dynamicBgClr" target="_blank">Project Info</a>-->
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="contact sec-pad">
+        <div class="main-container">
+            <h2 id="sixth-section-anchor" class="heading heading-sec heading-sec__mb-med">
+                <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+                <span class="heading-sec__sub heading-sec__sub--lt">
+                    Even if you're not quite ready to start a project and just need advice on eCommerce, digital
+                    strategy, or UX
+                    research and design, we're happy to provide you with our insights and guidance.<br><br>
+                    Let's chat to see if Mindful can help you achieve your eCommerce ambitions. Simply <a
+                        href="https://calendly.com/mindfulwebpartnership/15min" target="_blank">book a 15-minute call
+                        with us</a> or send us an
+                    email using the contact form below.
+                </span>
+            </h2>
+            <div id="element41" class="contact__form-container">
+                <form action="POST" data-netlify="true" class="contact__form">
+                    <div class="contact__form-field">
+                        <label class="contact__form-label" for="name">Name</label>
+                        <input required placeholder="Enter Your Name" type="text" class="contact__form-input"
+                            name="name" id="name" />
+                    </div>
+                    <div class="contact__form-field">
+                        <label class="contact__form-label" for="email">Email</label>
+                        <input required placeholder="Enter Your Email" type="text" class="contact__form-input"
+                            name="email" id="email" />
+                    </div>
+                    <div class="contact__form-field">
+                        <label class="contact__form-label" for="message">Message</label>
+                        <textarea required cols="30" rows="10" class="contact__form-input"
+                            placeholder="Enter Your Message" name="message" id="message"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn--theme contact__btn">
+                        Submit
+                    </button>
+                </form>
+            </div>
+            <div class="footer">
+                <div class="heading">
+                    <div class="header__logo-container">
+                        <div class="header__logo-img-cont">
+                            <img src="./assets/png/mwp-logo-only-white.png"
+                                alt="Mindful Web Partnership, LLC Logo Image" class="header__logo-img">
+                        </div>
+                        <h1>Mindful Web Partnership</h1>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="services">
+                        <h4>Services</h4>
+                        <p><a href="#third-section-anchor">Design and Development</a></p>
+                        <p><a href="#third-section-anchor">Store Migrations</a></p>
+                        <p><a href="#third-section-anchor">Growth Assistance &amp; Support</a></p>
+                        <p><a href="#third-section-anchor">Existing Store Improvements</a></p>
+                    </div>
+
+                    <div class="links">
+                        <h4>Quick links</h4>
+                        <p><a href="#third-section-anchor">Services</a></p>
+                        <p><a href="#first-section-anchor">Our Process</a></p>
+                        <p><a href="#fifth-section-anchor">Our Work</a></p>
+                        <p><a href="#fourth-section-anchor">FAQ</a></p>
+
+                    </div>
+                    <div class="details">
+                        <h4 class="mobile">Get In Touch</h4>
+                        <p><a href="https://calendly.com/mindfulwebpartnership/15min" target="_blank">📞 Schedule A
+                                Call</a></p>
+                        <p><a href="#sixth-section-anchor">📧 Email Us</a></p>
+
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p class="tagline">Don't just get an online store for your business &#8212; invest in an eCommerce
+                    experience.</p><br>
+                &copy; Copyright <span id="copyright-year">2021</span> Mindful Web Partnership, LLC
+            </footer>
+        </div>
+    </section>
+
+    <script src="js/modernizr-custom.js"></script>
+    <script src="./index.js"></script>
+    <script defer src="js/lottie-player.js"></script>
+    <style>
+        html {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
 </body>
 
 </html>
