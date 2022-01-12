@@ -3276,7 +3276,7 @@ footer hr {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin: 0;
+  margin-bottom: 2rem;
   padding: 0;
 }
 
@@ -3365,6 +3365,27 @@ footer hr {
   line-height: 2rem;
   margin-bottom: 2rem;
 }
+
+#services-grid .card__title {
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-left: 5rem;
+}
+
+#services-grid .card__title img {
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+}
+
 .card-grid .card__text {
   flex: 1 1 auto;
   font-size: 1.4rem;
